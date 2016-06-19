@@ -4,9 +4,9 @@
   <subtitle>Nanjing JimgMing Aviation Technology Co. Ltd</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://jmavi.github.io/blog.github.io/"/>
+  <link href="/blog.github.io/"/>
   <updated>2016-06-19T13:22:20.641Z</updated>
-  <id>https://jmavi.github.io/blog.github.io/</id>
+  <id>/blog.github.io/</id>
   
   <author>
     <name>王博士</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>关于我们</title>
-    <link href="https://jmavi.github.io/blog.github.io/2016/06/18/about_us/"/>
-    <id>https://jmavi.github.io/blog.github.io/2016/06/18/about_us/</id>
+    <link href="/blog.github.io/2016/06/18/about_us/"/>
+    <id>/blog.github.io/2016/06/18/about_us/</id>
     <published>2016-06-18T14:49:58.945Z</published>
     <updated>2016-06-19T13:22:20.641Z</updated>
     
