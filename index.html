@@ -57,7 +57,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://jmavi.github.io/blog"></form>
@@ -111,13 +111,18 @@
 <h3 id="数传电台篇"><a href="#数传电台篇" class="headerlink" title="数传电台篇"></a>数传电台篇</h3><p>插上电台，同样用lsusb命令查看是否多了一个设备，选择Paparazzi Center右上角的Session, 具体请结合无线数传电台参数选择，USB Serial 57600；最后点击右上角的Execute执行地面站。</p>
 <h3 id="遥控器篇"><a href="#遥控器篇" class="headerlink" title="遥控器篇"></a>遥控器篇</h3><p>不管你的遥控器多么高级，没有ppm编码功能不可以使用，当然，可以淘宝“ppm编码器”，将PWM信号转化为PPM信号。这里推荐的富斯6通道遥控自带了PPM编码功能，性价比超级高，省心省力。<br>因为是6通道，所以在radio对应的xml文件编辑6个channel，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE radio SYSTEM &quot;radio.dtd&quot;&gt;</span><br><span class="line">&lt;radio name=&quot;cockpitSX (easy)&quot; data_min=&quot;900&quot; data_max=&quot;2100&quot; sync_min =&quot;5000&quot; sync_max =&quot;15000&quot; pulse_type=&quot;POSITIVE&quot;&gt;</span><br><span class="line">  &lt;channel ctl=&quot;A&quot; function=&quot;ROLL&quot;      min=&quot;1000&quot; neutral=&quot;1500&quot; max=&quot;2000&quot; average=&quot;0&quot;/&gt;</span><br><span class="line">  &lt;channel ctl=&quot;B&quot; function=&quot;PITCH&quot;     min=&quot;2000&quot; neutral=&quot;1500&quot; max=&quot;1000&quot; average=&quot;0&quot;/&gt;</span><br><span class="line">  &lt;channel ctl=&quot;C&quot; function=&quot;THROTTLE&quot;  min=&quot;1010&quot; neutral=&quot;1010&quot; max=&quot;2000&quot; average=&quot;0&quot;/&gt;</span><br><span class="line">  &lt;channel ctl=&quot;D&quot; function=&quot;YAW&quot;       min=&quot;1010&quot; neutral=&quot;1500&quot; max=&quot;1990&quot; average=&quot;0&quot;/&gt;  </span><br><span class="line">  &lt;channel ctl=&quot;E&quot; function=&quot;MODE&quot;      min=&quot;1000&quot; neutral=&quot;1500&quot; max=&quot;2000&quot; average=&quot;1&quot;/&gt; </span><br><span class="line">  &lt;channel ctl=&quot;F&quot; function=&quot;UNUSED&quot;    min=&quot;2050&quot; neutral=&quot;1500&quot; max=&quot;950&quot;  average=&quot;1&quot;/&gt;</span><br><span class="line">&lt;/radio&gt;</span><br></pre></td></tr></table></figure></p>
 <p>1-4通道的顺序分别对应了滚转、俯仰、油门、偏航指令，这个顺序是遥控器硬件决定的，必须如此。<br>5、6通道是辅助通道，我们将第5通道定义为模式通道，第6通道暂未使用。</p>
+<h3 id="GPS篇"><a href="#GPS篇" class="headerlink" title="GPS篇"></a>GPS篇</h3><p>Paparazzi 默认的配置:<br>输出协议ubx<br>波特率38400<br>输出频率4Hz<br>通过在配置文件的modules里面添加一行可以自动配置参数</p>
+<modules><br>…<br><br>   <load name="gps_ubx_ucenter.xml"> <!-- 上电自动配置 GPS 参数 --><br></load></modules>
+
+
+
 <p>未完待续</p>
 <p>QQ交流群：34528825</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jmavi.github.io/blog/blog/2016/06/21/howto/" data-id="cippgnko8000048qep7hkvjjv" class="article-share-link">Share</a>
+      <a data-url="https://jmavi.github.io/blog/blog/2016/06/21/howto/" data-id="cippi1rxh0001r8qecqr6cp72" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -165,7 +170,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jmavi.github.io/blog/blog/2016/06/19/ppz_uav/" data-id="cippgnkop000248qem5t740us" class="article-share-link">Share</a>
+      <a data-url="https://jmavi.github.io/blog/blog/2016/06/19/ppz_uav/" data-id="cippi1rxl0002r8qei4g3q11j" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -209,7 +214,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jmavi.github.io/blog/blog/2016/06/18/about_us/" data-id="cippgnkok000148qewgl1e6bh" class="article-share-link">Share</a>
+      <a data-url="https://jmavi.github.io/blog/blog/2016/06/18/about_us/" data-id="cippi1rx40000r8qe454vrte2" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -234,7 +239,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/06/">June 2016</a></li></ul>
     </div>
@@ -244,7 +249,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         

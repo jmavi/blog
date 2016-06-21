@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-06-21T13:00:58.284Z</updated>
+  <updated>2016-06-21T13:48:41.784Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://jmavi.github.io/blog/2016/06/21/howto/"/>
     <id>https://jmavi.github.io/blog/2016/06/21/howto/</id>
     <published>2016-06-21T11:22:35.197Z</published>
-    <updated>2016-06-21T13:00:58.284Z</updated>
+    <updated>2016-06-21T13:48:41.784Z</updated>
     
     <content type="html">&lt;h2 id=&quot;软件准备&quot;&gt;&lt;a href=&quot;#软件准备&quot; class=&quot;headerlink&quot; title=&quot;软件准备&quot;&gt;&lt;/a&gt;软件准备&lt;/h2&gt;&lt;p&gt;Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台&lt;/p&gt;
 &lt;p&gt;安装步骤：&lt;br&gt;1.添加代码源&lt;br&gt;&lt;code&gt;sudo add-apt-repository -y ppa:paparazzi-uav/ppa &amp;amp;&amp;amp; sudo add-apt-repository -y ppa:terry.guo/gcc-arm-embedded &amp;amp;&amp;amp; sudo apt-get update&lt;/code&gt;&lt;/p&gt;
@@ -43,6 +43,11 @@
 &lt;h3 id=&quot;数传电台篇&quot;&gt;&lt;a href=&quot;#数传电台篇&quot; class=&quot;headerlink&quot; title=&quot;数传电台篇&quot;&gt;&lt;/a&gt;数传电台篇&lt;/h3&gt;&lt;p&gt;插上电台，同样用lsusb命令查看是否多了一个设备，选择Paparazzi Center右上角的Session, 具体请结合无线数传电台参数选择，USB Serial 57600；最后点击右上角的Execute执行地面站。&lt;/p&gt;
 &lt;h3 id=&quot;遥控器篇&quot;&gt;&lt;a href=&quot;#遥控器篇&quot; class=&quot;headerlink&quot; title=&quot;遥控器篇&quot;&gt;&lt;/a&gt;遥控器篇&lt;/h3&gt;&lt;p&gt;不管你的遥控器多么高级，没有ppm编码功能不可以使用，当然，可以淘宝“ppm编码器”，将PWM信号转化为PPM信号。这里推荐的富斯6通道遥控自带了PPM编码功能，性价比超级高，省心省力。&lt;br&gt;因为是6通道，所以在radio对应的xml文件编辑6个channel，&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE radio SYSTEM &amp;quot;radio.dtd&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;radio name=&amp;quot;cockpitSX (easy)&amp;quot; data_min=&amp;quot;900&amp;quot; data_max=&amp;quot;2100&amp;quot; sync_min =&amp;quot;5000&amp;quot; sync_max =&amp;quot;15000&amp;quot; pulse_type=&amp;quot;POSITIVE&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;A&amp;quot; function=&amp;quot;ROLL&amp;quot;      min=&amp;quot;1000&amp;quot; neutral=&amp;quot;1500&amp;quot; max=&amp;quot;2000&amp;quot; average=&amp;quot;0&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;B&amp;quot; function=&amp;quot;PITCH&amp;quot;     min=&amp;quot;2000&amp;quot; neutral=&amp;quot;1500&amp;quot; max=&amp;quot;1000&amp;quot; average=&amp;quot;0&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;C&amp;quot; function=&amp;quot;THROTTLE&amp;quot;  min=&amp;quot;1010&amp;quot; neutral=&amp;quot;1010&amp;quot; max=&amp;quot;2000&amp;quot; average=&amp;quot;0&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;D&amp;quot; function=&amp;quot;YAW&amp;quot;       min=&amp;quot;1010&amp;quot; neutral=&amp;quot;1500&amp;quot; max=&amp;quot;1990&amp;quot; average=&amp;quot;0&amp;quot;/&amp;gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;E&amp;quot; function=&amp;quot;MODE&amp;quot;      min=&amp;quot;1000&amp;quot; neutral=&amp;quot;1500&amp;quot; max=&amp;quot;2000&amp;quot; average=&amp;quot;1&amp;quot;/&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;F&amp;quot; function=&amp;quot;UNUSED&amp;quot;    min=&amp;quot;2050&amp;quot; neutral=&amp;quot;1500&amp;quot; max=&amp;quot;950&amp;quot;  average=&amp;quot;1&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/radio&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;1-4通道的顺序分别对应了滚转、俯仰、油门、偏航指令，这个顺序是遥控器硬件决定的，必须如此。&lt;br&gt;5、6通道是辅助通道，我们将第5通道定义为模式通道，第6通道暂未使用。&lt;/p&gt;
+&lt;h3 id=&quot;GPS篇&quot;&gt;&lt;a href=&quot;#GPS篇&quot; class=&quot;headerlink&quot; title=&quot;GPS篇&quot;&gt;&lt;/a&gt;GPS篇&lt;/h3&gt;&lt;p&gt;Paparazzi 默认的配置:&lt;br&gt;输出协议ubx&lt;br&gt;波特率38400&lt;br&gt;输出频率4Hz&lt;br&gt;通过在配置文件的modules里面添加一行可以自动配置参数&lt;/p&gt;
+&lt;modules&gt;&lt;br&gt;…&lt;br&gt;&lt;br&gt;   &lt;load name=&quot;gps_ubx_ucenter.xml&quot;&gt; &lt;!-- 上电自动配置 GPS 参数 --&gt;&lt;br&gt;&lt;/load&gt;&lt;/modules&gt;
+
+
+
 &lt;p&gt;未完待续&lt;/p&gt;
 &lt;p&gt;QQ交流群：34528825&lt;/p&gt;
 </content>
