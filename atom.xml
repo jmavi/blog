@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-06-21T08:46:56.578Z</updated>
+  <updated>2016-06-21T13:00:58.284Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -16,11 +16,53 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>打造自己的Paparazzi UAV ：手把手教你</title>
+    <link href="https://jmavi.github.io/blog/2016/06/21/howto/"/>
+    <id>https://jmavi.github.io/blog/2016/06/21/howto/</id>
+    <published>2016-06-21T11:22:35.197Z</published>
+    <updated>2016-06-21T13:00:58.284Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;软件准备&quot;&gt;&lt;a href=&quot;#软件准备&quot; class=&quot;headerlink&quot; title=&quot;软件准备&quot;&gt;&lt;/a&gt;软件准备&lt;/h2&gt;&lt;p&gt;Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台&lt;/p&gt;
+&lt;p&gt;安装步骤：&lt;br&gt;1.添加代码源&lt;br&gt;&lt;code&gt;sudo add-apt-repository -y ppa:paparazzi-uav/ppa &amp;amp;&amp;amp; sudo add-apt-repository -y ppa:terry.guo/gcc-arm-embedded &amp;amp;&amp;amp; sudo apt-get update&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2.安装第三方软件&lt;br&gt;&lt;code&gt;sudo apt-get -f -y install paparazzi-dev paparazzi-jsbsim gcc-arm-none-eabi&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;3.通过github下载源代码-5.6版本&lt;br&gt;&lt;code&gt;cd ~ &amp;amp;&amp;amp; git clone --origin upstream https://github.com/paparazzi/paparazzi.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd ~/paparazzi &amp;amp;&amp;amp; git remote update -p &amp;amp;&amp;amp; git checkout -b v5.6 upstream/v5.6&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;4.添加ppz设备规则&lt;br&gt;&lt;code&gt;sudo cp conf/system/udev/rules/50-paparazzi.rules /etc/udev/rules.d/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;5.添加ppz环境变量&lt;br&gt;&lt;code&gt;echo -e &amp;quot;export PAPARAZZI_HOME=~/paparazzi\nexport PAPARAZZI_SRC=~/paparazzi&amp;quot; &amp;gt;&amp;gt; ~/.bashrc &amp;amp;&amp;amp; source ~/.bashrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;6.编译运行&lt;br&gt;&lt;code&gt;make clean &amp;amp;&amp;amp; make &amp;amp;&amp;amp; ./paparazzi&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;涉及到安装失败现象主要第2步，源有问题，可以尝试163，sohu等，QQ群友可以索取安装好的地面站虚拟机文件。&lt;br&gt;有一些Linux常用命令你必须得掌握：&lt;br&gt;&lt;code&gt;Ctrl+Alt+t&lt;/code&gt; 调出命令行&lt;br&gt;&lt;code&gt;sudo -i&lt;/code&gt; 升级为root权限&lt;br&gt;&lt;code&gt;lsusb&lt;/code&gt; 查看连接系统的USB设备&lt;/p&gt;
+&lt;h2 id=&quot;硬件准备&quot;&gt;&lt;a href=&quot;#硬件准备&quot; class=&quot;headerlink&quot; title=&quot;硬件准备&quot;&gt;&lt;/a&gt;硬件准备&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;飞控：Lisa/M v2.0&lt;/li&gt;
+&lt;li&gt;数传电台：3DR 500mW&lt;/li&gt;
+&lt;li&gt;遥控器：FS-IA6B 带PPM编码功能&lt;/li&gt;
+&lt;li&gt;GPS：UBLOX 8代&lt;/li&gt;
+&lt;li&gt;电机、电调、桨&lt;/li&gt;
+&lt;li&gt;电池、充电器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;飞控篇&quot;&gt;&lt;a href=&quot;#飞控篇&quot; class=&quot;headerlink&quot; title=&quot;飞控篇&quot;&gt;&lt;/a&gt;飞控篇&lt;/h3&gt;&lt;p&gt;Lisa飞控拿到手首先是测试烧录程序，使用microUSB线连接飞控与电脑，不要接电池，注意，必须是USB2.0接口；通过lsusb命令查看是否多了一个设备，拔了就少了一个设备。这时候LED1~LED5为跑马灯。然后以sudo ./paparazzi启动软件，固定翼机A/C选择Microjet_LisaM，默认体配置文件为microjet_lisa_m.xml；四轴的A/C选择Quad_LisaM_2，默认机体配置文件为quadrotor_lisa_m_2_pwm_spektrum.xml。点击编辑Edit可以查看配置文件的内容，接着，Target选择ap，Build，Upload，底下会出现进度条的提示。&lt;br&gt;烧录完成后LED指示灯会发生变化，LED1为1Hz频率闪烁，LED2初始化后常亮，LED3为GPS指示灯，LED4为遥控器指示灯。&lt;br&gt;注意，默认的配置文件不能直接使用，请根据实际配置编辑配置文件，请在qq群文件下载注解。&lt;/p&gt;
+&lt;h3 id=&quot;数传电台篇&quot;&gt;&lt;a href=&quot;#数传电台篇&quot; class=&quot;headerlink&quot; title=&quot;数传电台篇&quot;&gt;&lt;/a&gt;数传电台篇&lt;/h3&gt;&lt;p&gt;插上电台，同样用lsusb命令查看是否多了一个设备，选择Paparazzi Center右上角的Session, 具体请结合无线数传电台参数选择，USB Serial 57600；最后点击右上角的Execute执行地面站。&lt;/p&gt;
+&lt;h3 id=&quot;遥控器篇&quot;&gt;&lt;a href=&quot;#遥控器篇&quot; class=&quot;headerlink&quot; title=&quot;遥控器篇&quot;&gt;&lt;/a&gt;遥控器篇&lt;/h3&gt;&lt;p&gt;不管你的遥控器多么高级，没有ppm编码功能不可以使用，当然，可以淘宝“ppm编码器”，将PWM信号转化为PPM信号。这里推荐的富斯6通道遥控自带了PPM编码功能，性价比超级高，省心省力。&lt;br&gt;因为是6通道，所以在radio对应的xml文件编辑6个channel，&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE radio SYSTEM &amp;quot;radio.dtd&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;radio name=&amp;quot;cockpitSX (easy)&amp;quot; data_min=&amp;quot;900&amp;quot; data_max=&amp;quot;2100&amp;quot; sync_min =&amp;quot;5000&amp;quot; sync_max =&amp;quot;15000&amp;quot; pulse_type=&amp;quot;POSITIVE&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;A&amp;quot; function=&amp;quot;ROLL&amp;quot;      min=&amp;quot;1000&amp;quot; neutral=&amp;quot;1500&amp;quot; max=&amp;quot;2000&amp;quot; average=&amp;quot;0&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;B&amp;quot; function=&amp;quot;PITCH&amp;quot;     min=&amp;quot;2000&amp;quot; neutral=&amp;quot;1500&amp;quot; max=&amp;quot;1000&amp;quot; average=&amp;quot;0&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;C&amp;quot; function=&amp;quot;THROTTLE&amp;quot;  min=&amp;quot;1010&amp;quot; neutral=&amp;quot;1010&amp;quot; max=&amp;quot;2000&amp;quot; average=&amp;quot;0&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;D&amp;quot; function=&amp;quot;YAW&amp;quot;       min=&amp;quot;1010&amp;quot; neutral=&amp;quot;1500&amp;quot; max=&amp;quot;1990&amp;quot; average=&amp;quot;0&amp;quot;/&amp;gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;E&amp;quot; function=&amp;quot;MODE&amp;quot;      min=&amp;quot;1000&amp;quot; neutral=&amp;quot;1500&amp;quot; max=&amp;quot;2000&amp;quot; average=&amp;quot;1&amp;quot;/&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;channel ctl=&amp;quot;F&amp;quot; function=&amp;quot;UNUSED&amp;quot;    min=&amp;quot;2050&amp;quot; neutral=&amp;quot;1500&amp;quot; max=&amp;quot;950&amp;quot;  average=&amp;quot;1&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/radio&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;1-4通道的顺序分别对应了滚转、俯仰、油门、偏航指令，这个顺序是遥控器硬件决定的，必须如此。&lt;br&gt;5、6通道是辅助通道，我们将第5通道定义为模式通道，第6通道暂未使用。&lt;/p&gt;
+&lt;p&gt;未完待续&lt;/p&gt;
+&lt;p&gt;QQ交流群：34528825&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;软件准备&quot;&gt;&lt;a href=&quot;#软件准备&quot; class=&quot;headerlink&quot; title=&quot;软件准备&quot;&gt;&lt;/a&gt;软件准备&lt;/h2&gt;&lt;p&gt;Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台&lt;/p&gt;
+&lt;p&gt;安装步骤：&lt;br&gt;1
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Paparazzi UAV 简介</title>
     <link href="https://jmavi.github.io/blog/2016/06/19/ppz_uav/"/>
     <id>https://jmavi.github.io/blog/2016/06/19/ppz_uav/</id>
     <published>2016-06-19T15:23:38.038Z</published>
-    <updated>2016-06-21T08:46:56.578Z</updated>
+    <updated>2016-06-21T12:05:49.296Z</updated>
     
     <content type="html">&lt;p&gt;Paparazzi（PPZ） UAV 开源项目诞生于图卢兹——空中客车（Air Bus）的总部，法国人的浪漫、贵族精神给该项目注入了与生俱来的高冷气质。&lt;br&gt;主要体现在：&lt;br&gt;1.PPZ 地面站系统采用Linux Ubuntu操作系统，瞬间将国内许多用户拒之门外；&lt;br&gt;2.地面站的编程语言gtk+ocaml+python或许许多专业的程序猿都很少使用；&lt;br&gt;3.还有对于习惯了盗版ARM开发环境的人们，对PPZ飞控采用的嵌入式编程的ARM库libopencm3更是十分陌生。&lt;br&gt;总之，以你过去的知识积累，似乎根本无法驾驭PPZ。&lt;/p&gt;
 &lt;p&gt;相比于APM,PIX平台，PPZ一直处于一个小圈子里，显得神秘莫测，它到底能干什么，性能如何，一直是个传说而已。&lt;/p&gt;
@@ -33,6 +75,7 @@
 &lt;p&gt;让依然选择PPZ的人们团结起来共同努力吧！&lt;/p&gt;
 &lt;p&gt;在这里需要插嘴一提的是，2010年5月，正当PPZ出于茁壮成长的时期，它的联合创始人法国国立民航大学（ENAC） 大学教授，Pascal Brisset，在一次登山过程中不幸遭遇了意外去世，天妒英才，上帝也喜爱无人机。&lt;/p&gt;
 &lt;p&gt;Paparazzi的硬件和软件系统都采用GPL许可证授权。&lt;/p&gt;
+&lt;p&gt;QQ群：34528825&lt;/p&gt;
 </content>
     
     <summary type="html">

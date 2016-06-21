@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>南京惊鸣航空科技有限公司博客专栏</title>
+  <title>打造自己的Paparazzi UAV ：手把手教你 | 南京惊鸣航空科技有限公司博客专栏</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="南京惊鸣航空科技有限公司博客专栏">
-<meta property="og:url" content="https://jmavi.github.io/blog/index.html">
+  <meta name="description" content="软件准备Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台
+安装步骤：1.添加代码源sudo add-apt-repository -y ppa:paparazzi-uav/ppa &amp;amp;&amp;amp; sudo add-apt-repository -y ppa:terry.guo/gcc-arm-embedded &amp;amp;&amp;amp; sudo apt-g">
+<meta property="og:type" content="article">
+<meta property="og:title" content="打造自己的Paparazzi UAV ：手把手教你">
+<meta property="og:url" content="https://jmavi.github.io/blog/2016/06/21/howto/index.html">
 <meta property="og:site_name" content="南京惊鸣航空科技有限公司博客专栏">
-<meta property="og:description">
+<meta property="og:description" content="软件准备Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台
+安装步骤：1.添加代码源sudo add-apt-repository -y ppa:paparazzi-uav/ppa &amp;amp;&amp;amp; sudo add-apt-repository -y ppa:terry.guo/gcc-arm-embedded &amp;amp;&amp;amp; sudo apt-g">
+<meta property="og:updated_time" content="2016-06-21T13:00:58.284Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="南京惊鸣航空科技有限公司博客专栏">
-<meta name="twitter:description">
+<meta name="twitter:title" content="打造自己的Paparazzi UAV ：手把手教你">
+<meta name="twitter:description" content="软件准备Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台
+安装步骤：1.添加代码源sudo add-apt-repository -y ppa:paparazzi-uav/ppa &amp;amp;&amp;amp; sudo add-apt-repository -y ppa:terry.guo/gcc-arm-embedded &amp;amp;&amp;amp; sudo apt-g">
   
     <link rel="alternate" href="/atom.xml" title="南京惊鸣航空科技有限公司博客专栏" type="application/atom+xml">
   
@@ -66,9 +70,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-howto" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-howto" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/2016/06/21/howto/" class="article-date">
   <time datetime="2016-06-21T11:22:35.197Z" itemprop="datePublished">2016-06-21</time>
@@ -81,8 +83,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2016/06/21/howto/">打造自己的Paparazzi UAV ：手把手教你</a>
+    <h1 class="article-title" itemprop="name">
+      打造自己的Paparazzi UAV ：手把手教你
     </h1>
   
 
@@ -123,102 +125,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-ppz_uav" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2016/06/19/ppz_uav/" class="article-date">
-  <time datetime="2016-06-19T15:23:38.038Z" itemprop="datePublished">2016-06-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2016/06/19/ppz_uav/">Paparazzi UAV 简介</a>
-    </h1>
+    <a href="/blog/2016/06/19/ppz_uav/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Paparazzi UAV 简介</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Paparazzi（PPZ） UAV 开源项目诞生于图卢兹——空中客车（Air Bus）的总部，法国人的浪漫、贵族精神给该项目注入了与生俱来的高冷气质。<br>主要体现在：<br>1.PPZ 地面站系统采用Linux Ubuntu操作系统，瞬间将国内许多用户拒之门外；<br>2.地面站的编程语言gtk+ocaml+python或许许多专业的程序猿都很少使用；<br>3.还有对于习惯了盗版ARM开发环境的人们，对PPZ飞控采用的嵌入式编程的ARM库libopencm3更是十分陌生。<br>总之，以你过去的知识积累，似乎根本无法驾驭PPZ。</p>
-<p>相比于APM,PIX平台，PPZ一直处于一个小圈子里，显得神秘莫测，它到底能干什么，性能如何，一直是个传说而已。</p>
-<p>因此很多人顿生疑虑，PPZ与APM/PIX的区别到底是什么。<br>那么这里如果以一句话概括两者的区别“PPZ面向极客，而APM/PIX面向大众用户”</p>
-<p>民间科学家们很容易通过APM/PIX的“友好的”Windows地面站向导，一步一步完成散件到整机的安装过程，或许只要1天，就可以享受到飞行的乐趣。甚至即刻可以开展一些航拍航测的活。</p>
-<p>但是PPZ根本不是按照这么个套路展现给使用者的。<br>距离来说，飞控+机体的搭配不是一个图形向导，而是一个有几十行参数的XML文件，一堆完全不能理解的变量、术语暴露在小白面前，瞬间奔溃；<br>再例如，虽然你也按照六面法在校准加速度机，旋转校准电子罗盘，但是等着你的是一堆按钮、脚本、配置文件！</p>
-<p>很多人说，PPZ是用来做研究的。完全在理！实际来看，看谁在买PPZ的东西呢？淘宝店铺的数据显示，百分之九十的客户来自学校、初创公司。</p>
-<p>那么PPZ这么麻烦，除了这么多缺点还有优点吗，它到底能给我们带来什么？<br>1.PPZ代表了自由精神：为了开源，可以将增大开发难度，为了开源，可以牺牲用户体验：我们用Linux，我们用Makefile，我们用Eagle……<br>2.PPZ有一统天下的豪迈气派：PPZ涵盖十来种AHRS算法给你选择；<br>飞控若干种，STM32的，NXP的，神奇得做到底层代码公用，通过头文件、配置文件指定个性化的内容，那么你要设计一个飞控是否受到很大启迪？<br>法国商用的Parrot无人机可以烧录PPZ固件飞行，还能跑光流定位，神奇？最近还可以在PIX板子上跑用PPZ代码；<br>PPZ支持固定翼、旋翼、直升机、垂直起降机型；<br>PPZ自己有集成化的跟踪天线（AAT）；PPZ支持DGPS；<br>PPZ设计了IVY总线，可以给不同设备调度数据；<br>PPZ支持集群飞行，等等</p>
-<p>可以说，PPZ玩得好，能够学得到的东西是APM/PIX的几十倍，几百倍。</p>
-<p>让依然选择PPZ的人们团结起来共同努力吧！</p>
-<p>在这里需要插嘴一提的是，2010年5月，正当PPZ出于茁壮成长的时期，它的联合创始人法国国立民航大学（ENAC） 大学教授，Pascal Brisset，在一次登山过程中不幸遭遇了意外去世，天妒英才，上帝也喜爱无人机。</p>
-<p>Paparazzi的硬件和软件系统都采用GPL许可证授权。</p>
-<p>QQ群：34528825</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jmavi.github.io/blog/blog/2016/06/19/ppz_uav/" data-id="cippgnkop000248qem5t740us" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-about_us" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2016/06/18/about_us/" class="article-date">
-  <time datetime="2016-06-18T14:49:58.945Z" itemprop="datePublished">2016-06-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2016/06/18/about_us/">关于我们</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>飞行似乎是人类与生俱来的梦想，古有奔月嫦娥，明朝的万户，近代发明飞机的莱特兄弟。与浪漫、刺激同在的往往是生命的代价。再到后来，培养一名优秀空军飞行员花费比等重量的黄金还贵，而且经不起损耗，无人机便成为了选择方案。</p>
-<p>随着硬件技术，尤其是MEMS的迅猛发展，无人机终于让平民大众也能消受得起，花费两三千人民币便可以DIY一架无人机。</p>
-<p>另一个推波助澜作用的是开源软件，当下聊起某某无人机，首先会想会问它是基于APM/PIX改的吧？</p>
-<p>硬件成熟了，算法成熟了，“似乎”一切水到渠成，只剩下商业化包装了，无人机公司如雨后春笋一般。</p>
-<p>然而，事实是，技术并未发展到想象中那么强大，各类炸鸡事件频发，甚至是属于无人机巨头的产品。摒弃浮躁，还需要潜心积累。对于创业队伍而言，拿精美的PPT、表演似的演讲去忽悠投资，不可取也。无人机行业属于“高估值”，说白了就是“暴利”，随着竞争加大，未来恐怕要倒下一批，潮退了，便知道谁在裸泳。</p>
-<p>我们是一群无人机玩家，更准确的说，是基于Paparazzi UAV开源项目做定制开发的队伍。目前，基于此平台的固定翼，多旋翼的试飞效果还是令人满意的，为用户解决实际问题才是一个产品存在的价值，而现在用户的需求呈多样化个性化趋势发展。路还很遥远，许多问题有待突破，毕竟，无人机属于系统性工程，现在，由不同专业背景组成的队伍初步组成。与大众团队不同的是，他们对采用的开源技术遮遮掩掩，采用开源技术却去除开源的影子。做开源项目与用户之前的桥梁，或许我们是国内第一个吃螃蟹的人，努力吧！</p>
-<p>现在很多人工作是为了饭碗而已，能每天干自己喜欢事情的人太少，也祝愿公司的发展能够为更多人带来做自己喜欢做的事情机会。</p>
-<p>联系我们：QQ群34528825</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jmavi.github.io/blog/blog/2016/06/18/about_us/" data-id="cippgnkok000148qewgl1e6bh" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
