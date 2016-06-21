@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-06-19T16:25:31.143Z</updated>
+  <updated>2016-06-21T08:46:56.578Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Paparazzi UAV 系统简介</title>
+    <title>Paparazzi UAV 简介</title>
     <link href="https://jmavi.github.io/blog/2016/06/19/ppz_uav/"/>
     <id>https://jmavi.github.io/blog/2016/06/19/ppz_uav/</id>
     <published>2016-06-19T15:23:38.038Z</published>
-    <updated>2016-06-19T16:25:31.143Z</updated>
+    <updated>2016-06-21T08:46:56.578Z</updated>
     
     <content type="html">&lt;p&gt;Paparazzi（PPZ） UAV 开源项目诞生于图卢兹——空中客车（Air Bus）的总部，法国人的浪漫、贵族精神给该项目注入了与生俱来的高冷气质。&lt;br&gt;主要体现在：&lt;br&gt;1.PPZ 地面站系统采用Linux Ubuntu操作系统，瞬间将国内许多用户拒之门外；&lt;br&gt;2.地面站的编程语言gtk+ocaml+python或许许多专业的程序猿都很少使用；&lt;br&gt;3.还有对于习惯了盗版ARM开发环境的人们，对PPZ飞控采用的嵌入式编程的ARM库libopencm3更是十分陌生。&lt;br&gt;总之，以你过去的知识积累，似乎根本无法驾驭PPZ。&lt;/p&gt;
 &lt;p&gt;相比于APM,PIX平台，PPZ一直处于一个小圈子里，显得神秘莫测，它到底能干什么，性能如何，一直是个传说而已。&lt;/p&gt;
@@ -31,7 +31,7 @@
 &lt;p&gt;那么PPZ这么麻烦，除了这么多缺点还有优点吗，它到底能给我们带来什么？&lt;br&gt;1.PPZ代表了自由精神：为了开源，可以将增大开发难度，为了开源，可以牺牲用户体验：我们用Linux，我们用Makefile，我们用Eagle……&lt;br&gt;2.PPZ有一统天下的豪迈气派：PPZ涵盖十来种AHRS算法给你选择；&lt;br&gt;飞控若干种，STM32的，NXP的，神奇得做到底层代码公用，通过头文件、配置文件指定个性化的内容，那么你要设计一个飞控是否受到很大启迪？&lt;br&gt;法国商用的Parrot无人机可以烧录PPZ固件飞行，还能跑光流定位，神奇？最近还可以在PIX板子上跑用PPZ代码；&lt;br&gt;PPZ支持固定翼、旋翼、直升机、垂直起降机型；&lt;br&gt;PPZ自己有集成化的跟踪天线（AAT）；PPZ支持DGPS；&lt;br&gt;PPZ设计了IVY总线，可以给不同设备调度数据；&lt;br&gt;PPZ支持集群飞行，等等&lt;/p&gt;
 &lt;p&gt;可以说，PPZ玩得好，能够学得到的东西是APM/PIX的几十倍，几百倍。&lt;/p&gt;
 &lt;p&gt;让依然选择PPZ的人们团结起来共同努力吧！&lt;/p&gt;
-&lt;p&gt;在这里需要插嘴一提的是，2010年5月，正当PPZ出于茁壮成长的时期，它的联合创始人法国国立民航大学（ENAC） 大学教授，Pascal Brisset，在一次登山过程中不幸遭遇了意外去世，天妒英才，上帝也喜爱无人机。&lt;br&gt;天才的德国人flixr带领大家继续前进！&lt;/p&gt;
+&lt;p&gt;在这里需要插嘴一提的是，2010年5月，正当PPZ出于茁壮成长的时期，它的联合创始人法国国立民航大学（ENAC） 大学教授，Pascal Brisset，在一次登山过程中不幸遭遇了意外去世，天妒英才，上帝也喜爱无人机。&lt;/p&gt;
 &lt;p&gt;Paparazzi的硬件和软件系统都采用GPL许可证授权。&lt;/p&gt;
 </content>
     
@@ -49,21 +49,22 @@
     <link href="https://jmavi.github.io/blog/2016/06/18/about_us/"/>
     <id>https://jmavi.github.io/blog/2016/06/18/about_us/</id>
     <published>2016-06-18T14:49:58.945Z</published>
-    <updated>2016-06-19T15:12:53.714Z</updated>
+    <updated>2016-06-21T10:37:41.061Z</updated>
     
-    <content type="html">&lt;p&gt;我们是一群极客，聚集在了一起，只为共同的爱好：无人机。&lt;/p&gt;
-&lt;p&gt;不想成为风口上的猪，只想踏实走好眼前的每一步，&lt;br&gt;国中有大鸟，三年不飞又不鸣，&lt;br&gt;为的是有朝一日一飞冲天、一鸣惊人。&lt;/p&gt;
-&lt;p&gt;“踏实、担当、情怀、远见”的文化理念不是空谈，&lt;br&gt;而是体现在我们的行事风格当中&lt;/p&gt;
-&lt;p&gt;团队的成长动力来源于每位伙伴的成长&lt;br&gt;没有人是螺丝钉，所以，让我们共同成长！&lt;/p&gt;
-&lt;p&gt;大声喊出我们的口号：FEEL THE WORLD ON THE SKY！&lt;/p&gt;
+    <content type="html">&lt;p&gt;飞行似乎是人类与生俱来的梦想，古有奔月嫦娥，明朝的万户，近代发明飞机的莱特兄弟。与浪漫、刺激同在的往往是生命的代价。再到后来，培养一名优秀空军飞行员花费比等重量的黄金还贵，而且经不起损耗，无人机便成为了选择方案。&lt;/p&gt;
+&lt;p&gt;随着硬件技术，尤其是MEMS的迅猛发展，无人机终于让平民大众也能消受得起，花费两三千人民币便可以DIY一架无人机。&lt;/p&gt;
+&lt;p&gt;另一个推波助澜作用的是开源软件，当下聊起某某无人机，首先会想会问它是基于APM/PIX改的吧？&lt;/p&gt;
+&lt;p&gt;硬件成熟了，算法成熟了，“似乎”一切水到渠成，只剩下商业化包装了，无人机公司如雨后春笋一般。&lt;/p&gt;
+&lt;p&gt;然而，事实是，技术并未发展到想象中那么强大，各类炸鸡事件频发，甚至是属于无人机巨头的产品。摒弃浮躁，还需要潜心积累。对于创业队伍而言，拿精美的PPT、表演似的演讲去忽悠投资，不可取也。无人机行业属于“高估值”，说白了就是“暴利”，随着竞争加大，未来恐怕要倒下一批，潮退了，便知道谁在裸泳。&lt;/p&gt;
+&lt;p&gt;我们是一群无人机玩家，更准确的说，是基于Paparazzi UAV开源项目做定制开发的队伍。目前，基于此平台的固定翼，多旋翼的试飞效果还是令人满意的，为用户解决实际问题才是一个产品存在的价值，而现在用户的需求呈多样化个性化趋势发展。路还很遥远，许多问题有待突破，毕竟，无人机属于系统性工程，现在，由不同专业背景组成的队伍初步组成。与大众团队不同的是，他们对采用的开源技术遮遮掩掩，采用开源技术却去除开源的影子。做开源项目与用户之前的桥梁，或许我们是国内第一个吃螃蟹的人，努力吧！&lt;/p&gt;
+&lt;p&gt;现在很多人工作是为了饭碗而已，能每天干自己喜欢事情的人太少，也祝愿公司的发展能够为更多人带来做自己喜欢做的事情机会。&lt;/p&gt;
 &lt;p&gt;联系我们：QQ群34528825&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;我们是一群极客，聚集在了一起，只为共同的爱好：无人机。&lt;/p&gt;
-&lt;p&gt;不想成为风口上的猪，只想踏实走好眼前的每一步，&lt;br&gt;国中有大鸟，三年不飞又不鸣，&lt;br&gt;为的是有朝一日一飞冲天、一鸣惊人。&lt;/p&gt;
-&lt;p&gt;“踏实、担当、情怀、远见”的文化理念不是空谈，&lt;br&gt;而是体现在
+      &lt;p&gt;飞行似乎是人类与生俱来的梦想，古有奔月嫦娥，明朝的万户，近代发明飞机的莱特兄弟。与浪漫、刺激同在的往往是生命的代价。再到后来，培养一名优秀空军飞行员花费比等重量的黄金还贵，而且经不起损耗，无人机便成为了选择方案。&lt;/p&gt;
+&lt;p&gt;随着硬件技术，尤其是MEMS的迅猛发展，无人机
     
     </summary>
     
