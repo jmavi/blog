@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://jmavi.github.io/blog/2016/06/19/ppz_uav/index.html">
 <meta property="og:site_name" content="南京惊鸣航空科技有限公司博客专栏">
 <meta property="og:description" content="Paparazzi（PPZ） UAV 开源项目诞生于图卢兹——空中客车（Air Bus）的总部，法国人的浪漫、贵族精神给该项目注入了与生俱来的高冷气质。主要体现在：1.PPZ 地面站系统采用Linux Ubuntu操作系统，瞬间将国内许多用户拒之门外；2.地面站的编程语言gtk+ocaml+python或许许多专业的程序猿都很少使用；3.还有对于习惯了盗版ARM开发环境的人们，对PPZ飞控采用的嵌">
-<meta property="og:updated_time" content="2016-06-22T13:57:54.302Z">
+<meta property="og:updated_time" content="2016-06-22T14:07:11.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Paparazzi UAV 简介">
 <meta name="twitter:description" content="Paparazzi（PPZ） UAV 开源项目诞生于图卢兹——空中客车（Air Bus）的总部，法国人的浪漫、贵族精神给该项目注入了与生俱来的高冷气质。主要体现在：1.PPZ 地面站系统采用Linux Ubuntu操作系统，瞬间将国内许多用户拒之门外；2.地面站的编程语言gtk+ocaml+python或许许多专业的程序猿都很少使用；3.还有对于习惯了盗版ARM开发环境的人们，对PPZ飞控采用的嵌">
@@ -56,9 +56,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://jmavi.github.io/blog"></form>
@@ -94,9 +94,9 @@
 <p>因此很多人顿生疑虑，PPZ与APM/PIX的区别到底是什么。<br>那么这里如果以一句话概括两者的区别“PPZ面向极客，而APM/PIX面向大众用户”</p>
 <p>民间科学家们很容易通过APM/PIX的“友好的”Windows地面站向导，一步一步完成散件到整机的安装过程，或许只要1天，就可以享受到飞行的乐趣。甚至即刻可以开展一些航拍航测的活。</p>
 <p>请自己思考，傻瓜式的向导优点是简单，缺点是什么？</p>
-<p>但是PPZ根本不是按照这么个套路展现给使用者的。<br>距离来说，飞控+机体的搭配不是一个图形向导，而是一个有几十行参数的XML文件，一堆完全不能理解的变量、术语暴露在小白面前，瞬间奔溃；<br>再例如，虽然你也按照六面法在校准加速度机，旋转校准电子罗盘，但是等着你的是一堆按钮、脚本、配置文件！</p>
-<p>很多人说，PPZ是用来做研究的。完全在理！实际来看，看谁在买PPZ的东西呢？淘宝店铺的数据显示，百分之九十的客户来自学校、初创公司。</p>
-<p>那么PPZ这么麻烦，除了这么多缺点还有优点吗，它到底能给我们带来什么？<br>1.PPZ代表了自由精神：为了开源，可以将增大开发难度，为了开源，可以牺牲用户体验：我们用Linux，我们用Makefile，我们用Eagle……有人要冷笑了，自由关我屁事？当XX软件厂商给你发律师函的时候你还能笑得起来吗？<br>2.PPZ有一统天下的豪迈气派：PPZ涵盖十来种AHRS算法、实际中飞行模式，给你选择；<br>飞控若干种，STM32的，NXP的，神奇得做到底层代码公用，通过头文件、配置文件指定个性化的内容，那么你要设计一个飞控是否受到很大启迪？法国商用的Parrot无人机可以烧录PPZ固件飞行，还能跑光流定位，神奇？最近还可以在PIX板子上跑用PPZ代码；<br>PPZ具有非常灵活的飞行计划编辑功能，除了传统的航点、路线，还有什么一键起降之类的，都可以通过计划实现；<br>PPZ支持固定翼、旋翼、直升机、垂直起降机型；<br>PPZ自己有集成化的跟踪天线（AAT）；PPZ支持DGPS；<br>PPZ设计了IVY总线，可以给不同设备调度数据；<br>PPZ支持集群飞行，等等</p>
+<p>PPZ根本不是按照这么个套路展现给使用者的。<br>具体来说，飞控+机体的搭配不是一个图形向导，而是一个有几十行参数的XML文件，一堆完全不能理解的变量、术语暴露在小白面前，瞬间奔溃；<br>再例如，虽然你也按照六面法在校准加速度机，旋转校准电子罗盘，但是等着你的是一堆按钮、脚本、配置文件！</p>
+<p>很多人说，PPZ是用来做研究的。完全在理！从实际来看，看谁在买PPZ的东西呢？淘宝店铺的数据显示，百分之九十的客户来自学校、初创公司。</p>
+<p>那么PPZ这么麻烦，除了这么多缺点还有优点吗，它到底能给我们带来什么？<br>1.PPZ代表了自由精神：为了开源，可以将增大开发难度，为了开源，可以牺牲用户体验：我们用Linux，我们用Makefile，我们用Eagle……有人要冷笑了，自由关我屁事？当XX软件厂商给你发律师函的时候你还能笑得起来吗？<br>2.PPZ有一统天下的豪迈气派：PPZ涵盖十来种AHRS算法、十几中飞行模式，给你选择；<br>飞控若干种，STM32的，NXP的，神奇得做到底层代码公用，通过头文件、配置文件指定个性化的内容，那么你要设计一个飞控是否受到很大启迪？法国商用的Parrot无人机可以烧录PPZ固件飞行，还能跑光流定位，神奇？最近还可以在PIX板子上跑用PPZ代码；<br>PPZ具有非常灵活的飞行计划编辑功能，除了传统的航点、路线，还有什么一键起降之类的，都可以通过计划实现；<br>PPZ支持固定翼、旋翼、直升机、垂直起降机型；<br>PPZ自己有集成化的跟踪天线（AAT）；PPZ支持DGPS；<br>PPZ设计了IVY总线，可以给不同设备调度数据；<br>PPZ支持集群飞行，等等<br>都说PIX双核你PPZ单核，不是这样的，咱们PPZ也能玩双核！</p>
 <p>可以说，PPZ玩得好，能够学得到的东西是APM/PIX的几十倍，几百倍。</p>
 <p>让依然选择PPZ的人们团结起来共同努力吧！</p>
 <p>在这里需要插嘴一提的是，2010年5月，正当PPZ出于茁壮成长的时期，它的联合创始人法国国立民航大学（ENAC） 大学教授，Pascal Brisset，在一次登山过程中不幸遭遇了意外去世，天妒英才，上帝也喜爱无人机。</p>
@@ -106,7 +106,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jmavi.github.io/blog/blog/2016/06/19/ppz_uav/" data-id="cipqy5hjw0002zgqe19k9xcl9" class="article-share-link">Partager</a>
+      <a data-url="https://jmavi.github.io/blog/blog/2016/06/19/ppz_uav/" data-id="cipqyf1sc0002p8qej3g0onj9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -116,7 +116,7 @@
 <nav id="article-nav">
   
     <a href="/blog/2016/06/21/howto/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Récent</strong>
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
           打造自己的Paparazzi UAV ：手把手教你
@@ -126,7 +126,7 @@
   
   
     <a href="/blog/2016/06/18/about_us/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">关于我们</div>
     </a>
   
@@ -159,7 +159,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -188,7 +188,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 王博士<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
