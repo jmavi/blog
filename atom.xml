@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-06-21T13:48:41.784Z</updated>
+  <updated>2016-06-24T14:17:49.618Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Paparazzi UAV 中的常见缩写</title>
+    <link href="https://jmavi.github.io/blog/2016/06/24/short/"/>
+    <id>https://jmavi.github.io/blog/2016/06/24/short/</id>
+    <published>2016-06-24T14:09:05.188Z</published>
+    <updated>2016-06-24T14:17:49.618Z</updated>
+    
+    <content type="html">&lt;p&gt;PPRZ - PaPaRazZzi 被用作了协议的名&lt;/p&gt;
+&lt;p&gt;PPZ - PaParazZzi 表示项目的缩写&lt;/p&gt;
+&lt;p&gt;NPS - New Paparazzi Simulator&lt;/p&gt;
+&lt;p&gt;FDM - Flight Dynamics Model&lt;/p&gt;
+&lt;p&gt;NED - North East Down 北东地（坐标系）&lt;/p&gt;
+&lt;p&gt;LTP – Local Tangent Plane 局部切平面&lt;/p&gt;
+&lt;p&gt;QQ交流群：34528825&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PPRZ - PaPaRazZzi 被用作了协议的名&lt;/p&gt;
+&lt;p&gt;PPZ - PaParazZzi 表示项目的缩写&lt;/p&gt;
+&lt;p&gt;NPS - New Paparazzi Simulator&lt;/p&gt;
+&lt;p&gt;FDM - Flight Dynamics Model&lt;/p&gt;
+&lt;p
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>打造自己的Paparazzi UAV ：手把手教你</title>
