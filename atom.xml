@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-06-24T14:17:49.618Z</updated>
+  <updated>2016-06-24T14:33:38.421Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -20,24 +20,27 @@
     <link href="https://jmavi.github.io/blog/2016/06/24/short/"/>
     <id>https://jmavi.github.io/blog/2016/06/24/short/</id>
     <published>2016-06-24T14:09:05.188Z</published>
-    <updated>2016-06-24T14:17:49.618Z</updated>
+    <updated>2016-06-24T14:33:38.421Z</updated>
     
-    <content type="html">&lt;p&gt;PPRZ - PaPaRazZzi 被用作了协议的名&lt;/p&gt;
-&lt;p&gt;PPZ - PaParazZzi 表示项目的缩写&lt;/p&gt;
-&lt;p&gt;NPS - New Paparazzi Simulator&lt;/p&gt;
-&lt;p&gt;FDM - Flight Dynamics Model&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;AHRS - Attitude and Heading Reference System &lt;/p&gt;
+&lt;h2 id=&quot;F&quot;&gt;&lt;a href=&quot;#F&quot; class=&quot;headerlink&quot; title=&quot;F&quot;&gt;&lt;/a&gt;F&lt;/h2&gt;&lt;p&gt;FDM - Flight Dynamics Model&lt;/p&gt;
+&lt;h2 id=&quot;G&quot;&gt;&lt;a href=&quot;#G&quot; class=&quot;headerlink&quot; title=&quot;G&quot;&gt;&lt;/a&gt;G&lt;/h2&gt;&lt;p&gt;GCS - Ground Control Station&lt;/p&gt;
+&lt;h2 id=&quot;I&quot;&gt;&lt;a href=&quot;#I&quot; class=&quot;headerlink&quot; title=&quot;I&quot;&gt;&lt;/a&gt;I&lt;/h2&gt;&lt;p&gt;IMU - Inertial Measurement Unit&lt;/p&gt;
+&lt;h2 id=&quot;L&quot;&gt;&lt;a href=&quot;#L&quot; class=&quot;headerlink&quot; title=&quot;L&quot;&gt;&lt;/a&gt;L&lt;/h2&gt;&lt;p&gt;LTP - Local Tangent Plane 局部切平面&lt;/p&gt;
+&lt;h2 id=&quot;N&quot;&gt;&lt;a href=&quot;#N&quot; class=&quot;headerlink&quot; title=&quot;N&quot;&gt;&lt;/a&gt;N&lt;/h2&gt;&lt;p&gt;NPS - New Paparazzi Simulator&lt;/p&gt;
 &lt;p&gt;NED - North East Down 北东地（坐标系）&lt;/p&gt;
-&lt;p&gt;LTP – Local Tangent Plane 局部切平面&lt;/p&gt;
+&lt;h2 id=&quot;P&quot;&gt;&lt;a href=&quot;#P&quot; class=&quot;headerlink&quot; title=&quot;P&quot;&gt;&lt;/a&gt;P&lt;/h2&gt;&lt;p&gt;PPRZ - PaPaRazZzi 被用作了协议的名&lt;/p&gt;
+&lt;p&gt;PPZ - PaParazZzi 表示项目的缩写&lt;/p&gt;
+&lt;h2 id=&quot;U&quot;&gt;&lt;a href=&quot;#U&quot; class=&quot;headerlink&quot; title=&quot;U&quot;&gt;&lt;/a&gt;U&lt;/h2&gt;&lt;p&gt;UAV - Unmanned Aerial Vehicle &lt;/p&gt;
+&lt;h2 id=&quot;V&quot;&gt;&lt;a href=&quot;#V&quot; class=&quot;headerlink&quot; title=&quot;V&quot;&gt;&lt;/a&gt;V&lt;/h2&gt;&lt;p&gt;VTOL - Vertical Take-Off and Landing 垂直起降&lt;/p&gt;
+&lt;p&gt;不断补充，欢迎提示&lt;/p&gt;
 &lt;p&gt;QQ交流群：34528825&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;PPRZ - PaPaRazZzi 被用作了协议的名&lt;/p&gt;
-&lt;p&gt;PPZ - PaParazZzi 表示项目的缩写&lt;/p&gt;
-&lt;p&gt;NPS - New Paparazzi Simulator&lt;/p&gt;
-&lt;p&gt;FDM - Flight Dynamics Model&lt;/p&gt;
-&lt;p
+      &lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;AHRS - Attitude and Heading Reference System &lt;/p&gt;
+&lt;h2 id=&quot;F&quot;&gt;&lt;a href=&quot;#F&quot; 
     
     </summary>
     
