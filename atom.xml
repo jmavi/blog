@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-07-12T13:42:07.563Z</updated>
+  <updated>2016-07-12T13:48:09.790Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -16,11 +16,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Paparazzi UAV 测绘功能</title>
+    <link href="https://jmavi.github.io/blog/2016/07/12/photo/"/>
+    <id>https://jmavi.github.io/blog/2016/07/12/photo/</id>
+    <published>2016-07-12T13:47:14.151Z</published>
+    <updated>2016-07-12T13:48:09.790Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;相机控制&quot;&gt;&lt;a href=&quot;#相机控制&quot; class=&quot;headerlink&quot; title=&quot;相机控制&quot;&gt;&lt;/a&gt;相机控制&lt;/h2&gt;&lt;p&gt;QQ交流群：34528825&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;相机控制&quot;&gt;&lt;a href=&quot;#相机控制&quot; class=&quot;headerlink&quot; title=&quot;相机控制&quot;&gt;&lt;/a&gt;相机控制&lt;/h2&gt;&lt;p&gt;QQ交流群：34528825&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Paparazzi UAV 通信协议</title>
     <link href="https://jmavi.github.io/blog/2016/07/12/protocol/"/>
     <id>https://jmavi.github.io/blog/2016/07/12/protocol/</id>
     <published>2016-07-12T13:37:10.130Z</published>
-    <updated>2016-07-12T13:42:07.563Z</updated>
+    <updated>2016-07-12T13:47:44.345Z</updated>
     
     <content type="html">&lt;p&gt;PPRZ：&lt;br&gt; 报文格式：&lt;br&gt;PPRZ-message: ABCxxxxxxxDE&lt;br&gt;    A PPRZ_STX (0x99) //A位置，报文帧头&lt;br&gt;    B LENGTH (A-&amp;gt;E)   //B位置，报文长度，涵盖了从A-&amp;gt;E区的总长度！&lt;br&gt;    C PPRZ_DATA&lt;br&gt;      0 SENDER_ID&lt;br&gt;      1 MSG_ID&lt;br&gt;      2 MSG_PAYLOAD&lt;br&gt;      . DATA (messages.xml)&lt;br&gt;    D PPRZ_CHECKSUM_A (sum[B-&amp;gt;C])&lt;br&gt;    E PPRZ_CHECKSUM_B (sum[ck_a])&lt;/p&gt;
 &lt;p&gt;PPRZ是PPZ官方标准的传输协议，其实包含一个所有协议通用的接口，也即struct transport trans;，然后才是PPRZ私有的数据内容：&lt;br&gt;struct pprz_transport {&lt;br&gt;  // generic interface&lt;br&gt;  struct transport trans;&lt;br&gt;  // specific pprz transport variables&lt;br&gt;  uint8_t status;&lt;br&gt;  uint8_t payload_idx;&lt;br&gt;  uint8_t ck_a, ck_b;&lt;br&gt;}; &lt;/p&gt;
@@ -29,6 +49,7 @@
 &lt;p&gt;现在，我们看到INS包含了9个变量，每个变量用int32存储，也就是每个变量占4个字节，合计36个字节，用下划线表示了payload具体数值。&lt;br&gt;D位置内容：F5=245，这个是PPRZ_CHECKSUM_A (sum[B-&amp;gt;C])&lt;br&gt;E位置内容：DA=218，这个是PPRZ_CHECKSUM_B (sum[ck_a])&lt;/p&gt;
 &lt;p&gt;下面再提供2串PPRZ报文，感兴趣的可以自己动手解析看看哦：&lt;br&gt;99 40 A2 93 00 00 00 00 00 00 00 00 7F FC FF FF 00 00 00 00 00 00 00 00 71 15 00 00 7C FF FF FF 30 FF FF FF F3 09 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 16 86&lt;/p&gt;
 &lt;p&gt;99 26 A2 9A 8C 21 95 1B FA 97 B6 00 10 12 11 1A 69 5B F7 19 84 06 E2 00 BA 08 03 00 38 3E 02 00 80 02 C3 47 5C 7C 99 40 A2 93 00 00 00 00 00 00 00 00 69 FC FF FF 00 00 00 00 00 00 00 00 93 D3 FE FF 7C FF FF FF 31 FF FF FF F4 09 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 DF 89&lt;/p&gt;
+&lt;p&gt;QQ交流群：34528825&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -76,7 +97,7 @@
     <link href="https://jmavi.github.io/blog/2016/06/21/howto/"/>
     <id>https://jmavi.github.io/blog/2016/06/21/howto/</id>
     <published>2016-06-21T11:22:35.197Z</published>
-    <updated>2016-07-12T13:21:43.074Z</updated>
+    <updated>2016-07-12T13:47:59.380Z</updated>
     
     <content type="html">&lt;h2 id=&quot;软件准备&quot;&gt;&lt;a href=&quot;#软件准备&quot; class=&quot;headerlink&quot; title=&quot;软件准备&quot;&gt;&lt;/a&gt;软件准备&lt;/h2&gt;&lt;p&gt;Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台，在该平台上可以编辑配置文件、编译、上传、仿真、运行，调试。&lt;/p&gt;
 &lt;p&gt;安装Paparazzi Center步骤：&lt;br&gt;1.添加代码源&lt;br&gt;&lt;code&gt;sudo add-apt-repository -y ppa:paparazzi-uav/ppa &amp;amp;&amp;amp; sudo add-apt-repository -y ppa:terry.guo/gcc-arm-embedded &amp;amp;&amp;amp; sudo apt-get update&lt;/code&gt;&lt;/p&gt;
