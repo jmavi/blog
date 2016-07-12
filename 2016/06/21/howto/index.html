@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="南京惊鸣航空科技有限公司博客专栏">
 <meta property="og:description" content="软件准备Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台，在该平台上可以编辑配置文件、编译、上传、仿真、运行，调试。
 安装Paparazzi Center步骤：1.添加代码源sudo add-apt-repository -y ppa:paparazzi-uav/ppa &amp;amp;&amp;amp; sudo add-apt-repository -y ppa:te">
-<meta property="og:updated_time" content="2016-07-12T12:50:44.014Z">
+<meta property="og:updated_time" content="2016-07-12T13:21:43.074Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="打造自己的Paparazzi UAV ：手把手教你">
 <meta name="twitter:description" content="软件准备Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台，在该平台上可以编辑配置文件、编译、上传、仿真、运行，调试。
@@ -59,9 +59,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://jmavi.github.io/blog"></form>
@@ -114,16 +114,14 @@
 <h3 id="遥控器篇"><a href="#遥控器篇" class="headerlink" title="遥控器篇"></a>遥控器篇</h3><p>不管你的遥控器多么高级，没有ppm编码功能不可以使用，当然，可以淘宝“ppm编码器”，将PWM信号转化为PPM信号。这里推荐的富斯6通道遥控自带了PPM编码功能，性价比超级高，省心省力。<br>因为是6通道，所以在radio对应的xml文件编辑6个channel，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE radio SYSTEM &quot;radio.dtd&quot;&gt;</span><br><span class="line">&lt;radio name=&quot;cockpitSX (easy)&quot; data_min=&quot;900&quot; data_max=&quot;2100&quot; sync_min =&quot;5000&quot; sync_max =&quot;15000&quot; pulse_type=&quot;POSITIVE&quot;&gt;</span><br><span class="line">  &lt;channel ctl=&quot;A&quot; function=&quot;ROLL&quot;      min=&quot;1010&quot; neutral=&quot;1500&quot; max=&quot;1990&quot; average=&quot;0&quot;/&gt;</span><br><span class="line">  &lt;channel ctl=&quot;B&quot; function=&quot;PITCH&quot;     min=&quot;1990&quot; neutral=&quot;1500&quot; max=&quot;1010&quot; average=&quot;0&quot;/&gt;</span><br><span class="line">  &lt;channel ctl=&quot;C&quot; function=&quot;THROTTLE&quot;  min=&quot;1010&quot; neutral=&quot;1010&quot; max=&quot;1990&quot; average=&quot;0&quot;/&gt;</span><br><span class="line">  &lt;channel ctl=&quot;D&quot; function=&quot;YAW&quot;       min=&quot;1010&quot; neutral=&quot;1500&quot; max=&quot;1990&quot; average=&quot;0&quot;/&gt;  </span><br><span class="line">  &lt;channel ctl=&quot;E&quot; function=&quot;MODE&quot;      min=&quot;1010&quot; neutral=&quot;1500&quot; max=&quot;1990&quot; average=&quot;1&quot;/&gt; </span><br><span class="line">  &lt;channel ctl=&quot;F&quot; function=&quot;KILL&quot;      min=&quot;2000&quot; neutral=&quot;1500&quot; max=&quot;1990&quot; average=&quot;1&quot;/&gt;</span><br><span class="line">&lt;/radio&gt;</span><br></pre></td></tr></table></figure></p>
 <p>1-4通道的顺序分别对应了滚转、俯仰、油门、偏航指令，这个顺序是遥控器硬件决定的，必须如此。<br>5、6通道是辅助通道，我们将第5通道定义为模式通道，第6通道定义为关闭油门。在富斯遥控上，我们设置两个辅助通道为SWC,SWD，分别为一个三段开关和一个两段开关。通过三段开关我们可以切换三个不同的模式，而两段开关就是电机正常OR强制关闭。<br>另外一方面，我们还需要设置各个通道对应的行程范围，通过在GCS的选择ppm，我么可以在Messages里面看到6个ppm值，一般而言，遥控器的行程在1000~2000左右的区间变化。我们将min，max设置落入这个区间，也就是1010,1990，这样的min，max比较合适。基本上把上面这段参数抄入radio的xml文件里就可以使用了。</p>
 <h3 id="GPS篇"><a href="#GPS篇" class="headerlink" title="GPS篇"></a>GPS篇</h3><p>Paparazzi 默认的配置:输出协议ubx；波特率38400；输出频率4Hz</p>
-<p>通过在配置文件的modules里面添加一行可以自动配置参数</p>
-<modules><br>…<br>   <load name="gps_ubx_ucenter.xml"> <!-- 上电自动配置 GPS 参数 --><br></load></modules>
-
+<p>通过在配置文件的modules里面添加一行可以自动配置参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;modules&gt;</span><br><span class="line">...</span><br><span class="line">   &lt;load name=&quot;gps_ubx_ucenter.xml&quot;/&gt; &lt;!-- 上电自动配置 GPS 参数 --&gt;</span><br><span class="line">&lt;/modules&gt;</span><br></pre></td></tr></table></figure></p>
 <p>注意，GPS必须放在室外开阔地带才能获取较好的定位效果。</p>
 <p>QQ交流群：34528825</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jmavi.github.io/blog/blog/2016/06/21/howto/" data-id="ciqjhbyp80001lgqe6m79s4px" class="article-share-link">Partager</a>
+      <a data-url="https://jmavi.github.io/blog/blog/2016/06/21/howto/" data-id="ciqjhit7900032cqem2w0j96v" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,7 +131,7 @@
 <nav id="article-nav">
   
     <a href="/blog/2016/06/24/short/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Récent</strong>
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
           Paparazzi UAV 中的常见缩写
@@ -143,7 +141,7 @@
   
   
     <a href="/blog/2016/06/19/ppz_uav/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">Paparazzi UAV 简介</div>
     </a>
   
@@ -176,7 +174,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -209,7 +207,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 王博士<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
