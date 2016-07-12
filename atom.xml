@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-07-12T13:48:09.790Z</updated>
+  <updated>2016-07-12T13:52:45.903Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Paparazzi UAV 自动天线跟踪</title>
+    <link href="https://jmavi.github.io/blog/2016/07/12/aat/"/>
+    <id>https://jmavi.github.io/blog/2016/07/12/aat/</id>
+    <published>2016-07-12T13:50:40.650Z</published>
+    <updated>2016-07-12T13:52:45.903Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;自动天线跟踪，简称AAT，目的是增加无人机与地面站之间的传输距离，实现手段是将定向天线实时对准无人机。&lt;/p&gt;
+&lt;p&gt;QQ交流群：34528825&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;自动天线跟踪，简称AAT，目的是增加无人机与地面站之间的传输距离，实现手段是将定向天线实时对准无人机。&lt;/p&gt;
+&lt;p&gt;QQ交流群：34528
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Paparazzi UAV 测绘功能</title>
@@ -66,9 +87,9 @@
     <link href="https://jmavi.github.io/blog/2016/06/24/short/"/>
     <id>https://jmavi.github.io/blog/2016/06/24/short/</id>
     <published>2016-06-24T14:09:05.188Z</published>
-    <updated>2016-07-12T13:39:21.263Z</updated>
+    <updated>2016-07-12T13:51:28.911Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;AGL - Above Ground Level&lt;br&gt;AHRS - Attitude and Heading Reference System &lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;AAT - Automatic Antenna Track&lt;br&gt;AGL - Above Ground Level&lt;br&gt;AHRS - Attitude and Heading Reference System &lt;/p&gt;
 &lt;h2 id=&quot;F&quot;&gt;&lt;a href=&quot;#F&quot; class=&quot;headerlink&quot; title=&quot;F&quot;&gt;&lt;/a&gt;F&lt;/h2&gt;&lt;p&gt;FDM - Flight Dynamics Model&lt;/p&gt;
 &lt;h2 id=&quot;G&quot;&gt;&lt;a href=&quot;#G&quot; class=&quot;headerlink&quot; title=&quot;G&quot;&gt;&lt;/a&gt;G&lt;/h2&gt;&lt;p&gt;GCS - Ground Control Station&lt;/p&gt;
 &lt;h2 id=&quot;I&quot;&gt;&lt;a href=&quot;#I&quot; class=&quot;headerlink&quot; title=&quot;I&quot;&gt;&lt;/a&gt;I&lt;/h2&gt;&lt;p&gt;IMU - Inertial Measurement Unit&lt;/p&gt;
@@ -85,7 +106,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;AGL - Above Ground Level&lt;br&gt;AHRS - Attitude and Heading Reference System &lt;
+      &lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;AAT - Automatic Antenna Track&lt;br&gt;AGL - Above Ground Level&lt;br&gt;AHRS - Attitu
     
     </summary>
     
