@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-07-12T13:52:45.903Z</updated>
+  <updated>2016-07-14T12:46:40.515Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Paparazzi UAV 固定翼配置文件注释</title>
+    <link href="https://jmavi.github.io/blog/2016/07/14/Paparazzi-UAV-%E5%9B%BA%E5%AE%9A%E7%BF%BC%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A/"/>
+    <id>https://jmavi.github.io/blog/2016/07/14/Paparazzi-UAV-固定翼配置文件注释/</id>
+    <published>2016-07-14T12:46:40.000Z</published>
+    <updated>2016-07-14T12:46:40.515Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Paparazzi UAV 自动天线跟踪</title>
