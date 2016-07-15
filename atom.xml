@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-07-15T02:25:24.444Z</updated>
+  <updated>2016-07-15T02:33:51.847Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://jmavi.github.io/blog/2016/07/14/Paparazzi-UAV-%E5%9B%BA%E5%AE%9A%E7%BF%BC%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A/"/>
     <id>https://jmavi.github.io/blog/2016/07/14/Paparazzi-UAV-固定翼配置文件注释/</id>
     <published>2016-07-14T12:46:40.000Z</published>
-    <updated>2016-07-15T02:25:24.444Z</updated>
+    <updated>2016-07-15T02:33:51.847Z</updated>
     
     <content type="html">&lt;p&gt;&amp;lt;!DOCTYPE airframe SYSTEM “../airframe.dtd”&amp;gt;&lt;br&gt;&lt;!-- 
      飞控 Lisa/M v2.0 board  + Aspirin IMU v2.2
@@ -221,8 +221,8 @@
     <title>关于我们</title>
     <link href="https://jmavi.github.io/blog/2016/06/18/about_us/"/>
     <id>https://jmavi.github.io/blog/2016/06/18/about_us/</id>
-    <published>2016-06-18T14:49:58.945Z</published>
-    <updated>2016-06-21T10:37:41.061Z</updated>
+    <published>2016-06-18T02:46:40.000Z</published>
+    <updated>2016-07-15T02:35:54.589Z</updated>
     
     <content type="html">&lt;p&gt;飞行似乎是人类与生俱来的梦想，古有奔月嫦娥，明朝的万户，近代发明飞机的莱特兄弟。与浪漫、刺激同在的往往是生命的代价。再到后来，培养一名优秀空军飞行员花费比等重量的黄金还贵，而且经不起损耗，无人机便成为了选择方案。&lt;/p&gt;
 &lt;p&gt;随着硬件技术，尤其是MEMS的迅猛发展，无人机终于让平民大众也能消受得起，花费两三千人民币便可以DIY一架无人机。&lt;/p&gt;
@@ -236,8 +236,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;飞行似乎是人类与生俱来的梦想，古有奔月嫦娥，明朝的万户，近代发明飞机的莱特兄弟。与浪漫、刺激同在的往往是生命的代价。再到后来，培养一名优秀空军飞行员花费比等重量的黄金还贵，而且经不起损耗，无人机便成为了选择方案。&lt;/p&gt;
-&lt;p&gt;随着硬件技术，尤其是MEMS的迅猛发展，无人机
+      xxxxxxxxxxxxxxxxxxxxx
     
     </summary>
     
