@@ -330,7 +330,16 @@
       
         
           
-            
+            <p>&lt;!DOCTYPE airframe SYSTEM “../airframe.dtd”&gt;<br><!-- 
+     飞控 Lisa/M v2.0 board  + Aspirin IMU v2.2
+     电台：3DR modem in transparent mode
+载机：冲浪者1.4m翼展滑翔机，30A电调+2212 KV1400电机+原装三叶桨
+--></p>
+<airframe name="Microjet Lisa/M 2.0">
+
+  <firmware name="fixedwing"><br>    <target name="sim" board="pc">    <target name="ap" board="lisa_m_2.0"><br>      <!-- baro board options for Lisa/M 2.0: BARO_BOARD_BMP085, BARO_MS5611_I2C, BARO_MS5611_SPI (default) --><br>      <configure name="LISA_M_BARO" value="BARO_MS5611_SPI"><!--ASPIRIN V2.2带高精度气压计--><br>      <configure name="PERIODIC_FREQUENCY" value="120"><br>      <configure name="AHRS_PROPAGATE_FREQUENCY" value="100"><br>      <configure name="AHRS_CORRECT_FREQUENCY" value="100"><br>    </configure></configure></configure></configure></target><br>    <configure name="USE_MAGNETOMETER" value="FALSE">    <!--关闭罗盘--><br>    <define name="AGR_CLIMB"><br>    <define name="LOITER_TRIM"><br>    <define name="STRONG_WIND"><br>    <subsystem name="radio_control" type="ppm"><br>    <!-- Communication --><br>    <subsystem name="telemetry" type="transparent"><!--透明传输 --><br>    <!-- Sensors --><br>    <subsystem name="imu" type="aspirin_v2.2">&lt;!—-2.2版本IMU–&gt;<br>    <subsystem name="gps" type="ublox"><br>    <subsystem name="ahrs" type="int_cmpl_quat"><br>    <subsystem name="control"><br>    <subsystem name="navigation"><br>    <subsystem name="ins" type="alt_float"><br>      <define name="USE_BAROMETER" value="TRUE"><br>    </define></subsystem><br>  </subsystem></subsystem></subsystem></subsystem></subsystem></subsystem></subsystem></define></define></define></configure></target></firmware>
+
+</airframe>
           
         
       

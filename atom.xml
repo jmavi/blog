@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-07-14T12:46:40.515Z</updated>
+  <updated>2016-07-15T02:25:24.444Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -20,11 +20,24 @@
     <link href="https://jmavi.github.io/blog/2016/07/14/Paparazzi-UAV-%E5%9B%BA%E5%AE%9A%E7%BF%BC%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A/"/>
     <id>https://jmavi.github.io/blog/2016/07/14/Paparazzi-UAV-固定翼配置文件注释/</id>
     <published>2016-07-14T12:46:40.000Z</published>
-    <updated>2016-07-14T12:46:40.515Z</updated>
+    <updated>2016-07-15T02:25:24.444Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;&amp;lt;!DOCTYPE airframe SYSTEM “../airframe.dtd”&amp;gt;&lt;br&gt;&lt;!-- 
+     飞控 Lisa/M v2.0 board  + Aspirin IMU v2.2
+     电台：3DR modem in transparent mode
+载机：冲浪者1.4m翼展滑翔机，30A电调+2212 KV1400电机+原装三叶桨
+--&gt;&lt;/p&gt;
+&lt;airframe name=&quot;Microjet Lisa/M 2.0&quot;&gt;
+
+  &lt;firmware name=&quot;fixedwing&quot;&gt;&lt;br&gt;    &lt;target name=&quot;sim&quot; board=&quot;pc&quot;&gt;    &lt;target name=&quot;ap&quot; board=&quot;lisa_m_2.0&quot;&gt;&lt;br&gt;      &lt;!-- baro board options for Lisa/M 2.0: BARO_BOARD_BMP085, BARO_MS5611_I2C, BARO_MS5611_SPI (default) --&gt;&lt;br&gt;      &lt;configure name=&quot;LISA_M_BARO&quot; value=&quot;BARO_MS5611_SPI&quot;&gt;&lt;!--ASPIRIN V2.2带高精度气压计--&gt;&lt;br&gt;      &lt;configure name=&quot;PERIODIC_FREQUENCY&quot; value=&quot;120&quot;&gt;&lt;br&gt;      &lt;configure name=&quot;AHRS_PROPAGATE_FREQUENCY&quot; value=&quot;100&quot;&gt;&lt;br&gt;      &lt;configure name=&quot;AHRS_CORRECT_FREQUENCY&quot; value=&quot;100&quot;&gt;&lt;br&gt;    &lt;/configure&gt;&lt;/configure&gt;&lt;/configure&gt;&lt;/configure&gt;&lt;/target&gt;&lt;br&gt;    &lt;configure name=&quot;USE_MAGNETOMETER&quot; value=&quot;FALSE&quot;&gt;    &lt;!--关闭罗盘--&gt;&lt;br&gt;    &lt;define name=&quot;AGR_CLIMB&quot;&gt;&lt;br&gt;    &lt;define name=&quot;LOITER_TRIM&quot;&gt;&lt;br&gt;    &lt;define name=&quot;STRONG_WIND&quot;&gt;&lt;br&gt;    &lt;subsystem name=&quot;radio_control&quot; type=&quot;ppm&quot;&gt;&lt;br&gt;    &lt;!-- Communication --&gt;&lt;br&gt;    &lt;subsystem name=&quot;telemetry&quot; type=&quot;transparent&quot;&gt;&lt;!--透明传输 --&gt;&lt;br&gt;    &lt;!-- Sensors --&gt;&lt;br&gt;    &lt;subsystem name=&quot;imu&quot; type=&quot;aspirin_v2.2&quot;&gt;&amp;lt;!—-2.2版本IMU–&amp;gt;&lt;br&gt;    &lt;subsystem name=&quot;gps&quot; type=&quot;ublox&quot;&gt;&lt;br&gt;    &lt;subsystem name=&quot;ahrs&quot; type=&quot;int_cmpl_quat&quot;&gt;&lt;br&gt;    &lt;subsystem name=&quot;control&quot;&gt;&lt;br&gt;    &lt;subsystem name=&quot;navigation&quot;&gt;&lt;br&gt;    &lt;subsystem name=&quot;ins&quot; type=&quot;alt_float&quot;&gt;&lt;br&gt;      &lt;define name=&quot;USE_BAROMETER&quot; value=&quot;TRUE&quot;&gt;&lt;br&gt;    &lt;/define&gt;&lt;/subsystem&gt;&lt;br&gt;  &lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/define&gt;&lt;/define&gt;&lt;/define&gt;&lt;/configure&gt;&lt;/target&gt;&lt;/firmware&gt;
+
+&lt;/airframe&gt;</content>
     
     <summary type="html">
+    
+      &lt;p&gt;&amp;lt;!DOCTYPE airframe SYSTEM “../airframe.dtd”&amp;gt;&lt;br&gt;&lt;!-- 
+     飞控 Lisa/M v2.0 board  + Aspirin IMU v2.2
+     电台：3DR modem in transparen
     
     </summary>
     
