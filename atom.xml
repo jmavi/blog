@@ -190,7 +190,7 @@
     <link href="https://jmavi.github.io/blog/2016/06/19/ppz_uav/"/>
     <id>https://jmavi.github.io/blog/2016/06/19/ppz_uav/</id>
     <published>2016-06-19T02:40:40.000Z</published>
-    <updated>2016-07-16T13:12:41.512Z</updated>
+    <updated>2016-07-16T13:47:02.849Z</updated>
     
     <content type="html">&lt;p&gt;Paparazzi（PPZ） UAV 开源项目诞生于图卢兹——该城市也是空中客车（Air Bus）的总部，法国人的浪漫、贵族精神给该项目注入了与生俱来的高冷气质。&lt;br&gt;主要体现在：&lt;br&gt;1.PPZ 地面站系统采用Linux Ubuntu操作系统，瞬间将国内许多用户拒之门外；&lt;br&gt;2.地面站的编程语言gtk+ocaml+python或许许多专业的程序猿都很少使用；&lt;br&gt;3.还有对于习惯了盗版ARM开发环境的人们，对PPZ飞控采用的嵌入式编程的ARM库libopencm3更是十分陌生。&lt;br&gt;总之，以你过去的知识积累，似乎根本无法驾驭PPZ。&lt;/p&gt;
 &lt;p&gt;相比于APM,PIX平台，PPZ一直处于一个小圈子里，显得神秘莫测，它到底能干什么，性能如何，一直是个传说而已。&lt;/p&gt;
@@ -204,6 +204,7 @@
 &lt;p&gt;让依然选择PPZ的人们团结起来共同努力吧！&lt;/p&gt;
 &lt;p&gt;在这里需要插嘴一提的是，2010年5月，正当PPZ出于茁壮成长的时期，它的联合创始人法国国立民航大学（ENAC） 大学教授，Pascal Brisset，在一次登山过程中不幸遭遇了意外去世，天妒英才，上帝也喜爱无人机。&lt;/p&gt;
 &lt;p&gt;Paparazzi的硬件和软件系统托管在github平台上。&lt;a href=&quot;https://github.com/paparazzi&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/paparazzi&lt;/a&gt; ，都采用GPL许可证授权。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://oaet4ygch.bkt.clouddn.com/Penguin.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;QQ群：34528825&lt;/p&gt;
 </content>
     
