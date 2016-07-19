@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-07-15T02:33:51.847Z</updated>
+  <updated>2016-07-19T12:56:56.680Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -20,24 +20,14 @@
     <link href="https://jmavi.github.io/blog/2016/07/14/Paparazzi-UAV-%E5%9B%BA%E5%AE%9A%E7%BF%BC%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A/"/>
     <id>https://jmavi.github.io/blog/2016/07/14/Paparazzi-UAV-固定翼配置文件注释/</id>
     <published>2016-07-14T12:46:40.000Z</published>
-    <updated>2016-07-15T02:33:51.847Z</updated>
+    <updated>2016-07-19T12:56:56.680Z</updated>
     
-    <content type="html">&lt;p&gt;&amp;lt;!DOCTYPE airframe SYSTEM “../airframe.dtd”&amp;gt;&lt;br&gt;&lt;!-- 
-     飞控 Lisa/M v2.0 board  + Aspirin IMU v2.2
-     电台：3DR modem in transparent mode
-载机：冲浪者1.4m翼展滑翔机，30A电调+2212 KV1400电机+原装三叶桨
---&gt;&lt;/p&gt;
-&lt;airframe name=&quot;Microjet Lisa/M 2.0&quot;&gt;
-
-  &lt;firmware name=&quot;fixedwing&quot;&gt;&lt;br&gt;    &lt;target name=&quot;sim&quot; board=&quot;pc&quot;&gt;    &lt;target name=&quot;ap&quot; board=&quot;lisa_m_2.0&quot;&gt;&lt;br&gt;      &lt;!-- baro board options for Lisa/M 2.0: BARO_BOARD_BMP085, BARO_MS5611_I2C, BARO_MS5611_SPI (default) --&gt;&lt;br&gt;      &lt;configure name=&quot;LISA_M_BARO&quot; value=&quot;BARO_MS5611_SPI&quot;&gt;&lt;!--ASPIRIN V2.2带高精度气压计--&gt;&lt;br&gt;      &lt;configure name=&quot;PERIODIC_FREQUENCY&quot; value=&quot;120&quot;&gt;&lt;br&gt;      &lt;configure name=&quot;AHRS_PROPAGATE_FREQUENCY&quot; value=&quot;100&quot;&gt;&lt;br&gt;      &lt;configure name=&quot;AHRS_CORRECT_FREQUENCY&quot; value=&quot;100&quot;&gt;&lt;br&gt;    &lt;/configure&gt;&lt;/configure&gt;&lt;/configure&gt;&lt;/configure&gt;&lt;/target&gt;&lt;br&gt;    &lt;configure name=&quot;USE_MAGNETOMETER&quot; value=&quot;FALSE&quot;&gt;    &lt;!--关闭罗盘--&gt;&lt;br&gt;    &lt;define name=&quot;AGR_CLIMB&quot;&gt;&lt;br&gt;    &lt;define name=&quot;LOITER_TRIM&quot;&gt;&lt;br&gt;    &lt;define name=&quot;STRONG_WIND&quot;&gt;&lt;br&gt;    &lt;subsystem name=&quot;radio_control&quot; type=&quot;ppm&quot;&gt;&lt;br&gt;    &lt;!-- Communication --&gt;&lt;br&gt;    &lt;subsystem name=&quot;telemetry&quot; type=&quot;transparent&quot;&gt;&lt;!--透明传输 --&gt;&lt;br&gt;    &lt;!-- Sensors --&gt;&lt;br&gt;    &lt;subsystem name=&quot;imu&quot; type=&quot;aspirin_v2.2&quot;&gt;&amp;lt;!—-2.2版本IMU–&amp;gt;&lt;br&gt;    &lt;subsystem name=&quot;gps&quot; type=&quot;ublox&quot;&gt;&lt;br&gt;    &lt;subsystem name=&quot;ahrs&quot; type=&quot;int_cmpl_quat&quot;&gt;&lt;br&gt;    &lt;subsystem name=&quot;control&quot;&gt;&lt;br&gt;    &lt;subsystem name=&quot;navigation&quot;&gt;&lt;br&gt;    &lt;subsystem name=&quot;ins&quot; type=&quot;alt_float&quot;&gt;&lt;br&gt;      &lt;define name=&quot;USE_BAROMETER&quot; value=&quot;TRUE&quot;&gt;&lt;br&gt;    &lt;/define&gt;&lt;/subsystem&gt;&lt;br&gt;  &lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/subsystem&gt;&lt;/define&gt;&lt;/define&gt;&lt;/define&gt;&lt;/configure&gt;&lt;/target&gt;&lt;/firmware&gt;
-
-&lt;/airframe&gt;</content>
+    <content type="html">&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE airframe SYSTEM &amp;quot;../airframe.dtd&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     飞控 Lisa/M v2.0 board  + Aspirin IMU v2.2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     电台：3DR modem in transparent mode&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;载机：冲浪者1.4m翼展滑翔机，30A电调+2212 KV1400电机+原装三叶桨&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;airframe name=&amp;quot;Microjet Lisa/M 2.0&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;firmware name=&amp;quot;fixedwing&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;target name=&amp;quot;sim&amp;quot;  board=&amp;quot;pc&amp;quot;/&amp;gt;    &amp;lt;target name=&amp;quot;ap&amp;quot;   board=&amp;quot;lisa_m_2.0&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;!-- baro board options for Lisa/M 2.0: BARO_BOARD_BMP085, BARO_MS5611_I2C, BARO_MS5611_SPI (default) --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;configure name=&amp;quot;LISA_M_BARO&amp;quot; value=&amp;quot;BARO_MS5611_SPI&amp;quot;/&amp;gt; &amp;lt;!--ASPIRIN V2.2带高精度气压计--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;configure name=&amp;quot;PERIODIC_FREQUENCY&amp;quot; value=&amp;quot;120&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;configure name=&amp;quot;AHRS_PROPAGATE_FREQUENCY&amp;quot; value=&amp;quot;100&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;configure name=&amp;quot;AHRS_CORRECT_FREQUENCY&amp;quot; value=&amp;quot;100&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/target&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;configure name=&amp;quot;USE_MAGNETOMETER&amp;quot; value=&amp;quot;FALSE&amp;quot;/&amp;gt;    &amp;lt;!--关闭罗盘--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;define name=&amp;quot;AGR_CLIMB&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;define name=&amp;quot;LOITER_TRIM&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;define name=&amp;quot;STRONG_WIND&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;radio_control&amp;quot; type=&amp;quot;ppm&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;!-- Communication --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;telemetry&amp;quot;  type=&amp;quot;transparent&amp;quot;/&amp;gt;&amp;lt;!--透明传输 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;!-- Sensors --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;imu&amp;quot;           type=&amp;quot;aspirin_v2.2&amp;quot;/&amp;gt;&amp;lt;!—-2.2版本IMU--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;gps&amp;quot;           type=&amp;quot;ublox&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;ahrs&amp;quot;          type=&amp;quot;int_cmpl_quat&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;control&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;navigation&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;ins&amp;quot; type=&amp;quot;alt_float&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;define name=&amp;quot;USE_BAROMETER&amp;quot; value=&amp;quot;TRUE&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/subsystem&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/firmware&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
     
     <summary type="html">
     
-      &lt;p&gt;&amp;lt;!DOCTYPE airframe SYSTEM “../airframe.dtd”&amp;gt;&lt;br&gt;&lt;!-- 
-     飞控 Lisa/M v2.0 board  + Aspirin IMU v2.2
-     电台：3DR modem in transparen
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
     
     </summary>
     
@@ -59,26 +49,6 @@
     
       &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;自动天线跟踪，简称AAT，目的是增加无人机与地面站之间的传输距离，实现手段是将定向天线实时对准无人机。&lt;/p&gt;
 &lt;p&gt;QQ交流群：34528
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Paparazzi UAV 测绘功能</title>
-    <link href="https://jmavi.github.io/blog/2016/07/12/photo/"/>
-    <id>https://jmavi.github.io/blog/2016/07/12/photo/</id>
-    <published>2016-07-12T02:46:40.000Z</published>
-    <updated>2016-07-15T02:43:11.608Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;相机控制&quot;&gt;&lt;a href=&quot;#相机控制&quot; class=&quot;headerlink&quot; title=&quot;相机控制&quot;&gt;&lt;/a&gt;相机控制&lt;/h2&gt;&lt;p&gt;ppz拥有强大的相机控制能力，从接口上看，具有GIPO,UART,等控制接口，从控制模式上看，有定时、定距、测绘三种&lt;/p&gt;
-&lt;h2 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h2&gt;&lt;p&gt;QQ交流群：34528825&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;相机控制&quot;&gt;&lt;a href=&quot;#相机控制&quot; class=&quot;headerlink&quot; title=&quot;相机控制&quot;&gt;&lt;/a&gt;相机控制&lt;/h2&gt;&lt;p&gt;ppz拥有强大的相机控制能力，从接口上看，具有GIPO,UART,等控制接口，从控制模式上看，有定时、定距、测绘三种&lt;/p&gt;
     
     </summary>
     
@@ -111,16 +81,36 @@
   </entry>
   
   <entry>
+    <title>Paparazzi UAV 测绘功能</title>
+    <link href="https://jmavi.github.io/blog/2016/07/12/photo/"/>
+    <id>https://jmavi.github.io/blog/2016/07/12/photo/</id>
+    <published>2016-07-12T02:46:40.000Z</published>
+    <updated>2016-07-15T02:43:11.608Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;相机控制&quot;&gt;&lt;a href=&quot;#相机控制&quot; class=&quot;headerlink&quot; title=&quot;相机控制&quot;&gt;&lt;/a&gt;相机控制&lt;/h2&gt;&lt;p&gt;ppz拥有强大的相机控制能力，从接口上看，具有GIPO,UART,等控制接口，从控制模式上看，有定时、定距、测绘三种&lt;/p&gt;
+&lt;h2 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h2&gt;&lt;p&gt;QQ交流群：34528825&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;相机控制&quot;&gt;&lt;a href=&quot;#相机控制&quot; class=&quot;headerlink&quot; title=&quot;相机控制&quot;&gt;&lt;/a&gt;相机控制&lt;/h2&gt;&lt;p&gt;ppz拥有强大的相机控制能力，从接口上看，具有GIPO,UART,等控制接口，从控制模式上看，有定时、定距、测绘三种&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Paparazzi UAV 中的常见缩写</title>
     <link href="https://jmavi.github.io/blog/2016/06/24/short/"/>
     <id>https://jmavi.github.io/blog/2016/06/24/short/</id>
     <published>2016-06-24T02:46:40.000Z</published>
-    <updated>2016-07-15T02:42:28.237Z</updated>
+    <updated>2016-07-19T12:51:43.947Z</updated>
     
     <content type="html">&lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;AAT - Automatic Antenna Track&lt;br&gt;AGL - Above Ground Level&lt;br&gt;AHRS - Attitude and Heading Reference System &lt;/p&gt;
 &lt;h2 id=&quot;F&quot;&gt;&lt;a href=&quot;#F&quot; class=&quot;headerlink&quot; title=&quot;F&quot;&gt;&lt;/a&gt;F&lt;/h2&gt;&lt;p&gt;FDM - Flight Dynamics Model&lt;/p&gt;
 &lt;h2 id=&quot;G&quot;&gt;&lt;a href=&quot;#G&quot; class=&quot;headerlink&quot; title=&quot;G&quot;&gt;&lt;/a&gt;G&lt;/h2&gt;&lt;p&gt;GCS - Ground Control Station&lt;/p&gt;
-&lt;h2 id=&quot;I&quot;&gt;&lt;a href=&quot;#I&quot; class=&quot;headerlink&quot; title=&quot;I&quot;&gt;&lt;/a&gt;I&lt;/h2&gt;&lt;p&gt;IMU - Inertial Measurement Unit&lt;/p&gt;
+&lt;h2 id=&quot;I&quot;&gt;&lt;a href=&quot;#I&quot; class=&quot;headerlink&quot; title=&quot;I&quot;&gt;&lt;/a&gt;I&lt;/h2&gt;&lt;p&gt;IMU - Inertial Measurement Unit&lt;br&gt;INDI - Incremental Nonlinear Dynamic Inversion&lt;/p&gt;
 &lt;h2 id=&quot;L&quot;&gt;&lt;a href=&quot;#L&quot; class=&quot;headerlink&quot; title=&quot;L&quot;&gt;&lt;/a&gt;L&lt;/h2&gt;&lt;p&gt;LTP - Local Tangent Plane 局部切平面&lt;/p&gt;
 &lt;h2 id=&quot;N&quot;&gt;&lt;a href=&quot;#N&quot; class=&quot;headerlink&quot; title=&quot;N&quot;&gt;&lt;/a&gt;N&lt;/h2&gt;&lt;p&gt;NPS - New Paparazzi Simulator&lt;/p&gt;
 &lt;p&gt;NED - North East Down 北东地（坐标系）&lt;/p&gt;
