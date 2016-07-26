@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jmavi.github.io/blog/"/>
-  <updated>2016-07-19T13:45:47.083Z</updated>
+  <updated>2016-07-19T13:53:35.933Z</updated>
   <id>https://jmavi.github.io/blog/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://jmavi.github.io/blog/2016/07/14/Paparazzi-UAV-%E5%9B%BA%E5%AE%9A%E7%BF%BC%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A/"/>
     <id>https://jmavi.github.io/blog/2016/07/14/Paparazzi-UAV-固定翼配置文件注释/</id>
     <published>2016-07-14T12:46:40.000Z</published>
-    <updated>2016-07-19T13:45:47.083Z</updated>
+    <updated>2016-07-19T13:53:35.933Z</updated>
     
     <content type="html">&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE airframe SYSTEM &amp;quot;../airframe.dtd&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   飞控 Lisa/M v2.0 board  + Aspirin IMU v2.2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   电台：3DR modem in transparent mode&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   载机：冲浪者1.4m翼展滑翔机，30A电调+2212 KV1400电机+原装三叶桨&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;airframe name=&amp;quot;Microjet Lisa/M 2.0&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;firmware name=&amp;quot;fixedwing&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;target name=&amp;quot;sim&amp;quot;  board=&amp;quot;pc&amp;quot;/&amp;gt;    &amp;lt;target name=&amp;quot;ap&amp;quot;   board=&amp;quot;lisa_m_2.0&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;!-- baro board options for Lisa/M 2.0: BARO_BOARD_BMP085, BARO_MS5611_I2C, BARO_MS5611_SPI (default) --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;configure name=&amp;quot;LISA_M_BARO&amp;quot; value=&amp;quot;BARO_MS5611_SPI&amp;quot;/&amp;gt; &amp;lt;!--ASPIRIN V2.2带高精度气压计--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;configure name=&amp;quot;PERIODIC_FREQUENCY&amp;quot; value=&amp;quot;120&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;configure name=&amp;quot;AHRS_PROPAGATE_FREQUENCY&amp;quot; value=&amp;quot;100&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;configure name=&amp;quot;AHRS_CORRECT_FREQUENCY&amp;quot; value=&amp;quot;100&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/target&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;configure name=&amp;quot;USE_MAGNETOMETER&amp;quot; value=&amp;quot;FALSE&amp;quot;/&amp;gt;    &amp;lt;!--关闭罗盘--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;define name=&amp;quot;AGR_CLIMB&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;define name=&amp;quot;LOITER_TRIM&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;define name=&amp;quot;STRONG_WIND&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;radio_control&amp;quot; type=&amp;quot;ppm&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;!-- Communication --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;telemetry&amp;quot;  type=&amp;quot;transparent&amp;quot;/&amp;gt;&amp;lt;!--透明传输 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;!-- Sensors --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;imu&amp;quot;           type=&amp;quot;aspirin_v2.2&amp;quot;/&amp;gt;&amp;lt;!—-2.2版本IMU--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;gps&amp;quot;           type=&amp;quot;ublox&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;ahrs&amp;quot;          type=&amp;quot;int_cmpl_quat&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;control&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;navigation&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;subsystem name=&amp;quot;ins&amp;quot; type=&amp;quot;alt_float&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;define name=&amp;quot;USE_BAROMETER&amp;quot; value=&amp;quot;TRUE&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/subsystem&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/firmware&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>
@@ -105,18 +105,29 @@
     <link href="https://jmavi.github.io/blog/2016/06/24/short/"/>
     <id>https://jmavi.github.io/blog/2016/06/24/short/</id>
     <published>2016-06-24T02:46:40.000Z</published>
-    <updated>2016-07-19T12:51:43.947Z</updated>
+    <updated>2016-07-26T13:51:14.581Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;AAT - Automatic Antenna Track&lt;br&gt;AGL - Above Ground Level&lt;br&gt;AHRS - Attitude and Heading Reference System &lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;ABI - AirBorne Interface &lt;/p&gt;
+&lt;p&gt;AAT - Automatic Antenna Track&lt;/p&gt;
+&lt;p&gt;AGL - Above Ground Level&lt;/p&gt;
+&lt;p&gt;AHRS - Attitude and Heading Reference System &lt;/p&gt;
+&lt;h2 id=&quot;B&quot;&gt;&lt;a href=&quot;#B&quot; class=&quot;headerlink&quot; title=&quot;B&quot;&gt;&lt;/a&gt;B&lt;/h2&gt;&lt;p&gt;BFP - Binary Fixed Point &lt;/p&gt;
+&lt;h2 id=&quot;C&quot;&gt;&lt;a href=&quot;#C&quot; class=&quot;headerlink&quot; title=&quot;C&quot;&gt;&lt;/a&gt;C&lt;/h2&gt;&lt;p&gt;cb - callbacks, aligner_cb,geo_mag_cb,gps_cb…&lt;/p&gt;
+&lt;h2 id=&quot;E&quot;&gt;&lt;a href=&quot;#E&quot; class=&quot;headerlink&quot; title=&quot;E&quot;&gt;&lt;/a&gt;E&lt;/h2&gt;&lt;p&gt;ENU - East-North-Up&lt;/p&gt;
 &lt;h2 id=&quot;F&quot;&gt;&lt;a href=&quot;#F&quot; class=&quot;headerlink&quot; title=&quot;F&quot;&gt;&lt;/a&gt;F&lt;/h2&gt;&lt;p&gt;FDM - Flight Dynamics Model&lt;/p&gt;
+&lt;p&gt;fc - float complementary&lt;/p&gt;
 &lt;h2 id=&quot;G&quot;&gt;&lt;a href=&quot;#G&quot; class=&quot;headerlink&quot; title=&quot;G&quot;&gt;&lt;/a&gt;G&lt;/h2&gt;&lt;p&gt;GCS - Ground Control Station&lt;/p&gt;
-&lt;h2 id=&quot;I&quot;&gt;&lt;a href=&quot;#I&quot; class=&quot;headerlink&quot; title=&quot;I&quot;&gt;&lt;/a&gt;I&lt;/h2&gt;&lt;p&gt;IMU - Inertial Measurement Unit&lt;br&gt;INDI - Incremental Nonlinear Dynamic Inversion&lt;/p&gt;
-&lt;h2 id=&quot;L&quot;&gt;&lt;a href=&quot;#L&quot; class=&quot;headerlink&quot; title=&quot;L&quot;&gt;&lt;/a&gt;L&lt;/h2&gt;&lt;p&gt;LTP - Local Tangent Plane 局部切平面&lt;/p&gt;
-&lt;h2 id=&quot;N&quot;&gt;&lt;a href=&quot;#N&quot; class=&quot;headerlink&quot; title=&quot;N&quot;&gt;&lt;/a&gt;N&lt;/h2&gt;&lt;p&gt;NPS - New Paparazzi Simulator&lt;/p&gt;
+&lt;h2 id=&quot;I&quot;&gt;&lt;a href=&quot;#I&quot; class=&quot;headerlink&quot; title=&quot;I&quot;&gt;&lt;/a&gt;I&lt;/h2&gt;&lt;p&gt;IMU - Inertial Measurement Unit&lt;/p&gt;
+&lt;p&gt;INDI - Incremental Nonlinear Dynamic Inversion&lt;/p&gt;
+&lt;h2 id=&quot;L&quot;&gt;&lt;a href=&quot;#L&quot; class=&quot;headerlink&quot; title=&quot;L&quot;&gt;&lt;/a&gt;L&lt;/h2&gt;&lt;p&gt;LLA - lat,lon: deg*1e7; alt: mm over ellipsoid&lt;/p&gt;
+&lt;p&gt;LTP - Local Tangent Plane 局部切平面&lt;/p&gt;
+&lt;h2 id=&quot;N&quot;&gt;&lt;a href=&quot;#N&quot; class=&quot;headerlink&quot; title=&quot;N&quot;&gt;&lt;/a&gt;N&lt;/h2&gt;&lt;p&gt;nb - number&lt;br&gt;NED - North-East-Down&lt;/p&gt;
+&lt;p&gt;NPS - New Paparazzi Simulator&lt;/p&gt;
 &lt;p&gt;NED - North East Down 北东地（坐标系）&lt;/p&gt;
 &lt;h2 id=&quot;P&quot;&gt;&lt;a href=&quot;#P&quot; class=&quot;headerlink&quot; title=&quot;P&quot;&gt;&lt;/a&gt;P&lt;/h2&gt;&lt;p&gt;PPRZ - PaPaRazZzi 被用作了协议的名&lt;/p&gt;
 &lt;p&gt;PPZ - PaParazZzi 表示项目的缩写&lt;/p&gt;
 &lt;h2 id=&quot;U&quot;&gt;&lt;a href=&quot;#U&quot; class=&quot;headerlink&quot; title=&quot;U&quot;&gt;&lt;/a&gt;U&lt;/h2&gt;&lt;p&gt;UAV - Unmanned Aerial Vehicle &lt;/p&gt;
+&lt;p&gt;UTM - north,east: cm; alt: mm over ellipsoid&lt;/p&gt;
 &lt;h2 id=&quot;V&quot;&gt;&lt;a href=&quot;#V&quot; class=&quot;headerlink&quot; title=&quot;V&quot;&gt;&lt;/a&gt;V&lt;/h2&gt;&lt;p&gt;VTOL - Vertical Take-Off and Landing 垂直起降&lt;/p&gt;
 &lt;p&gt;不断补充，欢迎提示&lt;/p&gt;
 &lt;p&gt;QQ交流群：34528825&lt;/p&gt;
@@ -124,7 +135,9 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;AAT - Automatic Antenna Track&lt;br&gt;AGL - Above Ground Level&lt;br&gt;AHRS - Attitu
+      &lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;ABI - AirBorne Interface &lt;/p&gt;
+&lt;p&gt;AAT - Automatic Antenna Track&lt;/p&gt;
+&lt;p&gt;AGL 
     
     </summary>
     
@@ -180,7 +193,7 @@
     <link href="https://jmavi.github.io/blog/2016/06/19/ppz_uav/"/>
     <id>https://jmavi.github.io/blog/2016/06/19/ppz_uav/</id>
     <published>2016-06-19T02:40:40.000Z</published>
-    <updated>2016-07-16T13:47:02.849Z</updated>
+    <updated>2016-07-25T11:58:00.644Z</updated>
     
     <content type="html">&lt;p&gt;Paparazzi（PPZ） UAV 开源项目诞生于图卢兹——该城市也是空中客车（Air Bus）的总部，法国人的浪漫、贵族精神给该项目注入了与生俱来的高冷气质。&lt;br&gt;主要体现在：&lt;br&gt;1.PPZ 地面站系统采用Linux Ubuntu操作系统，瞬间将国内许多用户拒之门外；&lt;br&gt;2.地面站的编程语言gtk+ocaml+python或许许多专业的程序猿都很少使用；&lt;br&gt;3.还有对于习惯了盗版ARM开发环境的人们，对PPZ飞控采用的嵌入式编程的ARM库libopencm3更是十分陌生。&lt;br&gt;总之，以你过去的知识积累，似乎根本无法驾驭PPZ。&lt;/p&gt;
 &lt;p&gt;相比于APM,PIX平台，PPZ一直处于一个小圈子里，显得神秘莫测，它到底能干什么，性能如何，一直是个传说而已。&lt;/p&gt;
@@ -189,7 +202,7 @@
 &lt;p&gt;请自己思考，傻瓜式的向导优点是简单，缺点是什么？&lt;/p&gt;
 &lt;p&gt;PPZ根本不是按照这么个套路展现给使用者的。&lt;br&gt;具体来说，飞控+机体的搭配不是一个图形向导，而是一个有几十行参数的XML文件，一堆完全不能理解的变量、术语暴露在小白面前，瞬间奔溃；&lt;br&gt;再例如，虽然你也按照六面法在校准加速度机，旋转校准电子罗盘，但是等着你的是一堆按钮、脚本、配置文件！&lt;/p&gt;
 &lt;p&gt;很多人说，PPZ是用来做研究的。完全在理！从实际来看，看谁在买PPZ的东西呢？淘宝店铺的数据显示，百分之九十的客户来自学校、初创公司。&lt;/p&gt;
-&lt;p&gt;那么PPZ这么麻烦，除了这么多缺点还有优点吗，它到底能给我们带来什么？&lt;br&gt;1.PPZ代表了自由精神：为了开源，可以将增大开发难度，为了开源，可以牺牲用户体验：我们用Linux，我们用Makefile，我们用Eagle……有人要冷笑了，自由关我屁事？当XX软件厂商给你发律师函的时候你还能笑得起来吗？&lt;br&gt;2.PPZ有一统天下的豪迈气派：PPZ涵盖十来种AHRS算法、十几中飞行模式，给你选择；&lt;br&gt;飞控若干种，STM32的，NXP的，神奇得做到底层代码公用，通过头文件、配置文件指定个性化的内容，那么你要设计一个飞控是否受到很大启迪？法国商用的Parrot无人机可以烧录PPZ固件飞行，还能跑光流定位，神奇？最近还可以在PIX板子上跑用PPZ代码；&lt;br&gt;PPZ具有非常灵活的飞行计划编辑功能，除了传统的航点、路线，还有什么一键起降之类的，都可以通过计划实现；&lt;br&gt;PPZ支持固定翼、旋翼、直升机、垂直起降机型；&lt;br&gt;PPZ自己有集成化的跟踪天线（AAT）；PPZ支持DGPS；&lt;br&gt;PPZ设计了IVY总线，可以给不同程序/设备调度数据；&lt;br&gt;PPZ支持集群飞行；&lt;br&gt;都说PIX双核你PPZ单核，不是这样的，咱们PPZ也能玩双核！&lt;br&gt;江湖上还有很多对PPZ不利的谣言，譬如PPZ对旋翼的支持不好，拜托，你自己无能也怪人家不强大？&lt;/p&gt;
+&lt;p&gt;那么PPZ这么麻烦，除了这么多缺点还有优点吗，它到底能给我们带来什么？&lt;br&gt;1.PPZ代表了自由精神：为了开源，可以将增大开发难度，为了开源，可以牺牲用户体验：我们用Linux，我们用Makefile，我们用Eagle……有人要冷笑了，自由关我屁事？当XX软件厂商给你发律师函的时候你还能笑得起来吗？&lt;br&gt;2.PPZ有一统天下的豪迈气派：PPZ涵盖十来种AHRS算法、十几中飞行模式，给你选择；&lt;br&gt;飞控若干种，STM32的，NXP的，神奇得做到底层代码公用，通过头文件、配置文件指定个性化的内容，那么你要设计一个飞控是否受到很大启迪？法国商用的Parrot无人机可以烧录PPZ固件飞行，还能跑光流定位，神奇？最近还可以在PIX板子上跑用PPZ代码；&lt;br&gt;PPZ具有非常灵活的飞行计划编辑功能，除了传统的航点、路线，还有什么一键起降之类的，都可以通过计划实现；&lt;br&gt;PPZ支持固定翼、旋翼、直升机、垂直起降机型；&lt;br&gt;PPZ自己有集成化的跟踪天线（AAT）；PPZ支持DGPS；&lt;br&gt;PPZ设计了IVY总线，可以给不同程序/设备调度数据；&lt;br&gt;PPZ支持集群飞行；&lt;br&gt;都说PIX双核你PPZ单核，不是这样的，咱们PPZ也能玩双核！&lt;/p&gt;
 &lt;p&gt;可以说，PPZ玩得好，能够学得到的东西是APM/PIX的几十倍，几百倍。&lt;/p&gt;
 &lt;p&gt;让依然选择PPZ的人们团结起来共同努力吧！&lt;/p&gt;
 &lt;p&gt;在这里需要插嘴一提的是，2010年5月，正当PPZ出于茁壮成长的时期，它的联合创始人法国国立民航大学（ENAC） 大学教授，Pascal Brisset，在一次登山过程中不幸遭遇了意外去世，天妒英才，上帝也喜爱无人机。&lt;/p&gt;
