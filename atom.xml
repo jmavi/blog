@@ -56,26 +56,6 @@
   </entry>
   
   <entry>
-    <title>Paparazzi UAV 测绘功能</title>
-    <link href="https://jmavi.github.io/blog/2016/07/12/photo/"/>
-    <id>https://jmavi.github.io/blog/2016/07/12/photo/</id>
-    <published>2016-07-12T02:46:40.000Z</published>
-    <updated>2016-07-15T02:43:11.608Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;相机控制&quot;&gt;&lt;a href=&quot;#相机控制&quot; class=&quot;headerlink&quot; title=&quot;相机控制&quot;&gt;&lt;/a&gt;相机控制&lt;/h2&gt;&lt;p&gt;ppz拥有强大的相机控制能力，从接口上看，具有GIPO,UART,等控制接口，从控制模式上看，有定时、定距、测绘三种&lt;/p&gt;
-&lt;h2 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h2&gt;&lt;p&gt;QQ交流群：34528825&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;相机控制&quot;&gt;&lt;a href=&quot;#相机控制&quot; class=&quot;headerlink&quot; title=&quot;相机控制&quot;&gt;&lt;/a&gt;相机控制&lt;/h2&gt;&lt;p&gt;ppz拥有强大的相机控制能力，从接口上看，具有GIPO,UART,等控制接口，从控制模式上看，有定时、定距、测绘三种&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Paparazzi UAV 通信协议</title>
     <link href="https://jmavi.github.io/blog/2016/07/12/protocol/"/>
     <id>https://jmavi.github.io/blog/2016/07/12/protocol/</id>
@@ -101,11 +81,31 @@
   </entry>
   
   <entry>
+    <title>Paparazzi UAV 测绘功能</title>
+    <link href="https://jmavi.github.io/blog/2016/07/12/photo/"/>
+    <id>https://jmavi.github.io/blog/2016/07/12/photo/</id>
+    <published>2016-07-12T02:46:40.000Z</published>
+    <updated>2016-07-15T02:43:11.608Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;相机控制&quot;&gt;&lt;a href=&quot;#相机控制&quot; class=&quot;headerlink&quot; title=&quot;相机控制&quot;&gt;&lt;/a&gt;相机控制&lt;/h2&gt;&lt;p&gt;ppz拥有强大的相机控制能力，从接口上看，具有GIPO,UART,等控制接口，从控制模式上看，有定时、定距、测绘三种&lt;/p&gt;
+&lt;h2 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h2&gt;&lt;p&gt;QQ交流群：34528825&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;相机控制&quot;&gt;&lt;a href=&quot;#相机控制&quot; class=&quot;headerlink&quot; title=&quot;相机控制&quot;&gt;&lt;/a&gt;相机控制&lt;/h2&gt;&lt;p&gt;ppz拥有强大的相机控制能力，从接口上看，具有GIPO,UART,等控制接口，从控制模式上看，有定时、定距、测绘三种&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Paparazzi UAV 中的常见缩写</title>
     <link href="https://jmavi.github.io/blog/2016/06/24/short/"/>
     <id>https://jmavi.github.io/blog/2016/06/24/short/</id>
     <published>2016-06-24T02:46:40.000Z</published>
-    <updated>2016-07-26T13:51:14.581Z</updated>
+    <updated>2016-07-26T14:06:53.911Z</updated>
     
     <content type="html">&lt;h2 id=&quot;A&quot;&gt;&lt;a href=&quot;#A&quot; class=&quot;headerlink&quot; title=&quot;A&quot;&gt;&lt;/a&gt;A&lt;/h2&gt;&lt;p&gt;ABI - AirBorne Interface &lt;/p&gt;
 &lt;p&gt;AAT - Automatic Antenna Track&lt;/p&gt;
@@ -113,6 +113,7 @@
 &lt;p&gt;AHRS - Attitude and Heading Reference System &lt;/p&gt;
 &lt;h2 id=&quot;B&quot;&gt;&lt;a href=&quot;#B&quot; class=&quot;headerlink&quot; title=&quot;B&quot;&gt;&lt;/a&gt;B&lt;/h2&gt;&lt;p&gt;BFP - Binary Fixed Point &lt;/p&gt;
 &lt;h2 id=&quot;C&quot;&gt;&lt;a href=&quot;#C&quot; class=&quot;headerlink&quot; title=&quot;C&quot;&gt;&lt;/a&gt;C&lt;/h2&gt;&lt;p&gt;cb - callbacks, aligner_cb,geo_mag_cb,gps_cb…&lt;/p&gt;
+&lt;h2 id=&quot;D&quot;&gt;&lt;a href=&quot;#D&quot; class=&quot;headerlink&quot; title=&quot;D&quot;&gt;&lt;/a&gt;D&lt;/h2&gt;&lt;p&gt;dcm - direction-cosine-matrix&lt;/p&gt;
 &lt;h2 id=&quot;E&quot;&gt;&lt;a href=&quot;#E&quot; class=&quot;headerlink&quot; title=&quot;E&quot;&gt;&lt;/a&gt;E&lt;/h2&gt;&lt;p&gt;ENU - East-North-Up&lt;/p&gt;
 &lt;h2 id=&quot;F&quot;&gt;&lt;a href=&quot;#F&quot; class=&quot;headerlink&quot; title=&quot;F&quot;&gt;&lt;/a&gt;F&lt;/h2&gt;&lt;p&gt;FDM - Flight Dynamics Model&lt;/p&gt;
 &lt;p&gt;fc - float complementary&lt;/p&gt;
@@ -121,9 +122,8 @@
 &lt;p&gt;INDI - Incremental Nonlinear Dynamic Inversion&lt;/p&gt;
 &lt;h2 id=&quot;L&quot;&gt;&lt;a href=&quot;#L&quot; class=&quot;headerlink&quot; title=&quot;L&quot;&gt;&lt;/a&gt;L&lt;/h2&gt;&lt;p&gt;LLA - lat,lon: deg*1e7; alt: mm over ellipsoid&lt;/p&gt;
 &lt;p&gt;LTP - Local Tangent Plane 局部切平面&lt;/p&gt;
-&lt;h2 id=&quot;N&quot;&gt;&lt;a href=&quot;#N&quot; class=&quot;headerlink&quot; title=&quot;N&quot;&gt;&lt;/a&gt;N&lt;/h2&gt;&lt;p&gt;nb - number&lt;br&gt;NED - North-East-Down&lt;/p&gt;
+&lt;h2 id=&quot;N&quot;&gt;&lt;a href=&quot;#N&quot; class=&quot;headerlink&quot; title=&quot;N&quot;&gt;&lt;/a&gt;N&lt;/h2&gt;&lt;p&gt;nb - number&lt;br&gt;NED - North-East-Down 北东地（坐标系）&lt;/p&gt;
 &lt;p&gt;NPS - New Paparazzi Simulator&lt;/p&gt;
-&lt;p&gt;NED - North East Down 北东地（坐标系）&lt;/p&gt;
 &lt;h2 id=&quot;P&quot;&gt;&lt;a href=&quot;#P&quot; class=&quot;headerlink&quot; title=&quot;P&quot;&gt;&lt;/a&gt;P&lt;/h2&gt;&lt;p&gt;PPRZ - PaPaRazZzi 被用作了协议的名&lt;/p&gt;
 &lt;p&gt;PPZ - PaParazZzi 表示项目的缩写&lt;/p&gt;
 &lt;h2 id=&quot;U&quot;&gt;&lt;a href=&quot;#U&quot; class=&quot;headerlink&quot; title=&quot;U&quot;&gt;&lt;/a&gt;U&lt;/h2&gt;&lt;p&gt;UAV - Unmanned Aerial Vehicle &lt;/p&gt;
@@ -149,7 +149,7 @@
     <link href="https://jmavi.github.io/blog/2016/06/21/howto/"/>
     <id>https://jmavi.github.io/blog/2016/06/21/howto/</id>
     <published>2016-06-21T02:46:40.000Z</published>
-    <updated>2016-07-16T13:09:40.498Z</updated>
+    <updated>2016-08-14T12:13:01.613Z</updated>
     
     <content type="html">&lt;h2 id=&quot;软件准备&quot;&gt;&lt;a href=&quot;#软件准备&quot; class=&quot;headerlink&quot; title=&quot;软件准备&quot;&gt;&lt;/a&gt;软件准备&lt;/h2&gt;&lt;p&gt;Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台，在该平台上可以编辑配置文件、编译、上传、仿真、运行，调试。&lt;/p&gt;
 &lt;p&gt;安装Paparazzi Center步骤：&lt;/p&gt;
@@ -176,6 +176,11 @@
 &lt;h3 id=&quot;GPS篇&quot;&gt;&lt;a href=&quot;#GPS篇&quot; class=&quot;headerlink&quot; title=&quot;GPS篇&quot;&gt;&lt;/a&gt;GPS篇&lt;/h3&gt;&lt;p&gt;硬件上，Lisa的UART3串口接GPS,注意4PIN的定义，电源和地接错可能烧毁GPS模块，RX,TX没有交叉反接则无法通信。&lt;br&gt;Paparazzi 参数默认的配置:输出协议ubx；波特率38400；输出频率4Hz&lt;/p&gt;
 &lt;p&gt;通过在配置文件的modules里面添加一行可以自动配置参数&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;modules&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;load name=&amp;quot;gps_ubx_ucenter.xml&amp;quot;/&amp;gt; &amp;lt;!-- 上电自动配置 GPS 参数 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/modules&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;注意，GPS必须放在室外开阔地带才能获取较好的定位效果。&lt;br&gt;除了ubx协议，理论上ppz还支持MTK，NEMA协议，但是没有做过实测。&lt;/p&gt;
+&lt;h3 id=&quot;传感器校准&quot;&gt;&lt;a href=&quot;#传感器校准&quot; class=&quot;headerlink&quot; title=&quot;传感器校准&quot;&gt;&lt;/a&gt;传感器校准&lt;/h3&gt;&lt;p&gt;在GCS的setting里面找到telemetry，下拉raw_sensors，点绿色小勾，这时候Messages里面会出现采集下来的传感器原始数据&lt;br&gt;所有数据记录在日志里面，目录在~/paparazzi/var/logs/xxx.data,其中xxx是本次运行生成的日志名称，可以事先清空改目录，再运行ppz center，&lt;br&gt;这样可以一眼看出来此次日志是哪个文件。&lt;br&gt;校准传感器需要用到脚本工具，具体是~/paparazzi/sw/tools/calibration/calibrate.py，用法是:&lt;br&gt;python ~/paparazzi/sw/tools/calibration/calibrate.py -s XXX ~/paparazzi/var/logs/YYY.data&lt;br&gt;其中XXX表示校准的是哪个传感器，ACCEL, MAG；YYY代表日志文件名。具体校准方法是：&lt;/p&gt;
+&lt;p&gt;1.陀螺仪&lt;br&gt;根据AHRS算法选择谨慎对待，请选择int_cmpl_quat 不需要校准&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;subsystem name=&amp;quot;ahrs&amp;quot; type=&amp;quot;int_cmpl_quat&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;2.加速度计&lt;br&gt;六面法校准，先搞清楚飞控的前后左右方向。然后依次摆放：&lt;br&gt;正面朝上-反面朝上-鼻子朝下-尾巴朝下-右侧朝下-左侧朝下&lt;br&gt;摆放时候注意：不能震动、要垂直&lt;br&gt;六面摆放完成后关闭地面站。&lt;br&gt;执行校准脚本：&lt;br&gt;python ~/paparazzi/sw/tools/calibration/calibrate.py -s ACCEL ~/paparazzi/var/logs/XXXXX.data -p&lt;br&gt;这里还多了个参数 -p，我们可以看到校准后的图形化显示&lt;/p&gt;
+&lt;p&gt;3.电子罗盘&lt;br&gt;首先填写当地的磁偏角，可以用南京的数据&lt;/p&gt;
+&lt;p&gt;然后，缓慢旋转飞控，尽量使得磁力线能与各个方向上切割电子罗盘，&lt;br&gt;执行校准脚本：&lt;br&gt;python ~/paparazzi/sw/tools/calibration/calibrate.py -s MAG ~/paparazzi/var/logs/XXXXX.data -p&lt;br&gt;同样，这里的 -p，我们可以看到校准后的图形化显示&lt;/p&gt;
 &lt;p&gt;QQ交流群：34528825&lt;/p&gt;
 </content>
     

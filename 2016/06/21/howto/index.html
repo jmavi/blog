@@ -96,7 +96,7 @@
 <meta property="og:description" content="软件准备Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台，在该平台上可以编辑配置文件、编译、上传、仿真、运行，调试。
 安装Paparazzi Center步骤：
 1.添加代码源sudo add-apt-repository -y ppa:paparazzi-uav/ppa &amp;amp;&amp;amp; sudo add-apt-repository -y ppa:t">
-<meta property="og:updated_time" content="2016-07-16T13:09:40.498Z">
+<meta property="og:updated_time" content="2016-08-14T12:13:01.613Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="打造自己的Paparazzi UAV ：手把手教你">
 <meta name="twitter:description" content="软件准备Paparazzi Center，集成了参数配置、代码编译及上传、地面站功能的一体化平台，在该平台上可以编辑配置文件、编译、上传、仿真、运行，调试。
@@ -355,6 +355,11 @@
 <h3 id="GPS篇"><a href="#GPS篇" class="headerlink" title="GPS篇"></a>GPS篇</h3><p>硬件上，Lisa的UART3串口接GPS,注意4PIN的定义，电源和地接错可能烧毁GPS模块，RX,TX没有交叉反接则无法通信。<br>Paparazzi 参数默认的配置:输出协议ubx；波特率38400；输出频率4Hz</p>
 <p>通过在配置文件的modules里面添加一行可以自动配置参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;modules&gt;</span><br><span class="line">...</span><br><span class="line">   &lt;load name=&quot;gps_ubx_ucenter.xml&quot;/&gt; &lt;!-- 上电自动配置 GPS 参数 --&gt;</span><br><span class="line">&lt;/modules&gt;</span><br></pre></td></tr></table></figure></p>
 <p>注意，GPS必须放在室外开阔地带才能获取较好的定位效果。<br>除了ubx协议，理论上ppz还支持MTK，NEMA协议，但是没有做过实测。</p>
+<h3 id="传感器校准"><a href="#传感器校准" class="headerlink" title="传感器校准"></a>传感器校准</h3><p>在GCS的setting里面找到telemetry，下拉raw_sensors，点绿色小勾，这时候Messages里面会出现采集下来的传感器原始数据<br>所有数据记录在日志里面，目录在~/paparazzi/var/logs/xxx.data,其中xxx是本次运行生成的日志名称，可以事先清空改目录，再运行ppz center，<br>这样可以一眼看出来此次日志是哪个文件。<br>校准传感器需要用到脚本工具，具体是~/paparazzi/sw/tools/calibration/calibrate.py，用法是:<br>python ~/paparazzi/sw/tools/calibration/calibrate.py -s XXX ~/paparazzi/var/logs/YYY.data<br>其中XXX表示校准的是哪个传感器，ACCEL, MAG；YYY代表日志文件名。具体校准方法是：</p>
+<p>1.陀螺仪<br>根据AHRS算法选择谨慎对待，请选择int_cmpl_quat 不需要校准<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;subsystem name=&quot;ahrs&quot; type=&quot;int_cmpl_quat&quot;&gt;</span><br></pre></td></tr></table></figure></p>
+<p>2.加速度计<br>六面法校准，先搞清楚飞控的前后左右方向。然后依次摆放：<br>正面朝上-反面朝上-鼻子朝下-尾巴朝下-右侧朝下-左侧朝下<br>摆放时候注意：不能震动、要垂直<br>六面摆放完成后关闭地面站。<br>执行校准脚本：<br>python ~/paparazzi/sw/tools/calibration/calibrate.py -s ACCEL ~/paparazzi/var/logs/XXXXX.data -p<br>这里还多了个参数 -p，我们可以看到校准后的图形化显示</p>
+<p>3.电子罗盘<br>首先填写当地的磁偏角，可以用南京的数据</p>
+<p>然后，缓慢旋转飞控，尽量使得磁力线能与各个方向上切割电子罗盘，<br>执行校准脚本：<br>python ~/paparazzi/sw/tools/calibration/calibrate.py -s MAG ~/paparazzi/var/logs/XXXXX.data -p<br>同样，这里的 -p，我们可以看到校准后的图形化显示</p>
 <p>QQ交流群：34528825</p>
 
       
@@ -516,7 +521,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#软件准备"><span class="nav-number">1.</span> <span class="nav-text">软件准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件准备"><span class="nav-number">2.</span> <span class="nav-text">硬件准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#飞控篇"><span class="nav-number">2.1.</span> <span class="nav-text">飞控篇</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数传电台篇"><span class="nav-number">2.2.</span> <span class="nav-text">数传电台篇</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遥控器篇"><span class="nav-number">2.3.</span> <span class="nav-text">遥控器篇</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GPS篇"><span class="nav-number">2.4.</span> <span class="nav-text">GPS篇</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#软件准备"><span class="nav-number">1.</span> <span class="nav-text">软件准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件准备"><span class="nav-number">2.</span> <span class="nav-text">硬件准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#飞控篇"><span class="nav-number">2.1.</span> <span class="nav-text">飞控篇</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数传电台篇"><span class="nav-number">2.2.</span> <span class="nav-text">数传电台篇</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遥控器篇"><span class="nav-number">2.3.</span> <span class="nav-text">遥控器篇</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GPS篇"><span class="nav-number">2.4.</span> <span class="nav-text">GPS篇</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传感器校准"><span class="nav-number">2.5.</span> <span class="nav-text">传感器校准</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
